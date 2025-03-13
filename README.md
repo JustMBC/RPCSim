@@ -11,3 +11,10 @@ Also Makefile is not _bullet-proof_ and has to be edited depending on your distr
 Working on compiling this
 
 Note that Miniconda3-latest-Linux-x86_64.sh is too large to be uploaded to this repo
+Track Miniconda3-latest-Linux-x86_64.sh with Git LFS
+
+to push bash:
+
+git add .
+git commit -m "message"
+git push origin master
