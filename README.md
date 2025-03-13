@@ -5,3 +5,9 @@ It's still a work-in-progress and actively updated. Expect many bugs and odd beh
 
 There is no proper documentation yet and the code is, right now, not properly commented.
 Also Makefile is not _bullet-proof_ and has to be edited depending on your distribution, GCC version and Garfield++ installation.
+
+=======================================
+
+Working on running this
+
+Note that Miniconda3-latest-Linux-x86_64.sh is too large to be uploaded to this repo
