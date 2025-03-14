@@ -63,22 +63,23 @@ GSLDIR = $(GSL_HOME)/lib
 LIBDIR = $(GARFIELD_INSTALL)/lib64
 DCLIB = $(DCMT_HOME)/lib
 
-MY_CFLAGS =  `root-config --cflags` -fopenmp -Wall -Wno-unused-result -msse2 -DHAVE_SSE2 -I$(INCDIRGAR) -I$(HEEDDIR) -I$(GSLDIR)/include -I$(GARFIELD_INSTALL)/include -I$(GARFIELD_INSTALL)/include/Garfield
+MY_CFLAGS =  `root-config --cflags` -fopenmp -Wall -Wno-unused-result -msse2 -DHAVE_SSE2 -I$(INCDIRGAR) -I$(HEEDDIR) -I$(GSLDIR)/include -I$(GARFIELD_INSTALL)/include/Garfield
 
 # The linker options.
-# REMOVED: -ldcmt
-MY_LIBS   =  -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -lGarfield `root-config --glibs` -lgfortran -lgsl -lgslcblas -lssl -lcrypto -L$(ROOTSYS)/lib -lgcc_s -lncurses -lncursesw
+MY_LIBS   =  -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -ldcmt -lGarfield `root-config --glibs` -lgfortran -lgsl -lgslcblas -lssl -lcrypto -L$(ROOTSYS)/lib -lgcc_s -lncurses -lncursesw
 
 
 # The pre-processor options used by the cpp (man cpp for more).
 CPPFLAGS  = 
 
 # The options used in linking as well as in any direct use of ld.
-LDFLAGS   = -no-pie -L$(GARFIELD_INSTALL)/lib64 -lGarfield -lGarfieldRandom -Wl,-rpath,/usera/mlc95/garfieldpp/install/lib64/ -Wl,-rpath-link,/usera/mlc95/garfieldpp/install/lib64/
+# REMOVED: -Wl,-rpath,/usera/mlc95/garfieldpp/install/lib64/ -Wl,-rpath-link,/usera/mlc95/garfieldpp/install/lib64/
+LDFLAGS   = -no-pie -L$(GARFIELD_INSTALL)/lib64 -lGarfield -lGarfieldRandom 
 
 # The directories in which source files reside.
 # If not specified, only the current directory will be serached.
-SRCDIRS   = src src/MT src/SFMT
+#SRCDIRS   = src src/MT src/SFMT
+SRCDIRS   = src src/dcmt/include src/dcmt/lib src/SFMT
 INCDIR = include
 
 # The executable file name.
@@ -97,7 +98,7 @@ HDREXTS = .h .H .hh .hpp .HPP .h++ .hxx .hp
 
 # The pre-processor and compiler options.
 # Users can override those variables from the command line.
-CFLAGS	=	-pg -g -O2 #-fp-model precise -fp-model source
+CFLAGS	=	-pg -g -O2 -Isrc/dcmt/include #-fp-model precise -fp-model source
 CXXFLAGS	=	-pg -g -Wall -O2 -I$(GARFIELD_INSTALL)/include -fPIE -fPIC #-fp-model precise -fp-model source
 
 # The C program compiler.

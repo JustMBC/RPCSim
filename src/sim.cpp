@@ -27,7 +27,8 @@
 
 #include "SFMT/SFMT.h"
 #include "SFMT/SFMT-jump.h"
-#include "MT/dc.h"
+//#include "MT/dc.h"
+#include "dcmt/include/dc.h"
 #include "TRandomEngineMTDC.hpp"
 #include "TRandomEngineSFMT.hpp"
 #include "TRandomEngineMRG.hpp"

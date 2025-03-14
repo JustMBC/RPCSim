@@ -58,7 +58,7 @@ std::string toString(const T & value)
 
 std::string currentDateTime();
 
-uint64_t gettid();
+uint64_t get_thread_id();
 
 uint getUUID();
 

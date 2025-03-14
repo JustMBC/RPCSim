@@ -47,7 +47,7 @@
 	
 	<OutFile>corr-pos.dat</OutFile>
 	
-	<Generator>SFMT</Generator>
+	<Generator>not_SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
 	<GarfieldSeed>58965475</GarfieldSeed>
 	

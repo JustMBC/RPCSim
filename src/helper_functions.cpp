@@ -19,7 +19,7 @@ string currentDateTime() {
 }
 
 /* Return thread id (use with caution, those are not PID). */
-uint64_t gettid() {
+uint64_t get_thread_id() {
     pthread_t ptid = pthread_self();
     uint64_t threadId = 0;
     memcpy(&threadId, &ptid, std::min(sizeof(threadId), sizeof(ptid)));

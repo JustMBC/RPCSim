@@ -26,8 +26,8 @@
 
 #include "TRandomEngine.hpp"
 #include "TGenMT.hpp"
-#include "MT/dc.h"
-
+//#include "MT/dc.h"
+#include "dcmt/include/dc.h"
 
 class TRandomEngineMT : public TRandomEngine {
 	public:
