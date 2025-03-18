@@ -200,12 +200,17 @@ int main(int argc, const char** argv) {
 	//detector->printPACSData();
 	//delete gas;
 	
+	/* END SIMULATION AFTER CALCULATING HEED PARAMETERS */
+	//cout << "EXITING BEFORE AVALANCHE SIMULATION";
+	//delete detector;
+	//return 0;
+
 	if (config.noAvalanche){
+		cout << "config: noAvalanche";
 		delete detector;
 		return 0;
 	}
 
-	
 	
 	/* Init struct of simulation parameters */
 	ThreadData* data = new ThreadData(detector, config, SFMT, 0);

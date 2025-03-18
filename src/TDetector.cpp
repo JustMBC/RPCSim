@@ -292,6 +292,7 @@ void TDetector::writeGasTransportParameters(){
 	double alpha, eta, vx, vy, vz, dl, dt;
 	double E = 100.;
 	for (int i=0; i<50; i++){
+		// NOTE THAT CURRENTLY THE GAS TABLE HAS THE RANGE 5-90 kV/cm
 		E += (120000. - 100.)/50.;
 		mGas->ElectronTownsend(E,0.,0.,0.,0.,0., alpha);
 		mGas->ElectronAttachment(E,0.,0.,0.,0.,0., eta);
