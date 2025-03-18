@@ -17,4 +17,9 @@ to push bash:
 
 git add .
 git commit -m "message"
-git push origin master
+git push --set-upstream origin master
+
+
+after compiling, run by bashing:
+
+time ./sim --config ./config/calice_copy.xml
