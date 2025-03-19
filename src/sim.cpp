@@ -187,8 +187,8 @@ int main(int argc, const char** argv) {
 	detector->writeGasTransportParameters();
 	
 	/* Functions to produce data on primary inisation */
-	//TAvalanche::computeClusterDensity(detector,"muon",6e7,1.5e10,600);
-	//TAvalanche::computeElectronsProduction(detector,"muon",5.e9,60000);
+	TAvalanche::computeClusterDensity(detector,"muon",6e7,1.5e10,600);
+	TAvalanche::computeElectronsProduction(detector,"muon",5.e9,60000);
 	
 	/* Here we define a Magboltz Gas in order to print its photo-absorption CS through HEED */
 	//MediumMagboltz* gas = new MediumMagboltz();
