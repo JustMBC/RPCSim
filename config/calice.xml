@@ -9,7 +9,7 @@
 			<width>0.11</width>
 			<permittivity>7</permittivity>
     </Cathode>
-    <ElectricField>56000</ElectricField>
+    <ElectricField>51000</ElectricField>
     <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -42,14 +42,14 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>1</Events>
-	<Threads>1</Threads>
+	<Events>48</Events>
+	<Threads>12</Threads>
 	
-	<OutFile>corr-pos.dat</OutFile>
+	<OutFile>calice_51kV_48events_run1.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
-	<GarfieldSeed>58965475</GarfieldSeed>
+	<GarfieldSeed>-1</GarfieldSeed>
 	
 	
 <!--	<SingleCluster>
@@ -57,8 +57,8 @@
 		<x0>-1</x0>
 	</SingleCluster> -->
 	
-	<Verbose>1</Verbose>
-	<VerbosityLevel>1</VerbosityLevel>
+	<Verbose>0</Verbose>
+	<VerbosityLevel>0</VerbosityLevel>
 	<Snapshots>0</Snapshots>
-	<DebugOutput>1</DebugOutput>
+	<DebugOutput>0</DebugOutput>
 </Simulation>

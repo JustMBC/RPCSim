@@ -8,8 +8,6 @@ Also Makefile is not _bullet-proof_ and has to be edited depending on your distr
 
 =======================================
 
-Working on compiling this
-
 Note that some files are too large to be uploaded to this repo
 Track then with Git LFS:
 git lfs track "/pathToFile/file.file"
@@ -24,4 +22,4 @@ git reset origin/master
 
 
 after compiling, run by bashing:
-time ./sim --config ./config/calice_copy.xml
+time ./sim --config ./config/CONFIG_FILE.xml

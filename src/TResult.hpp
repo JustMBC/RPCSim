@@ -36,14 +36,15 @@ struct TResult
 	int streamer;
 	int nCluster;
 	uint size;
-	double charges[2000];
+	double finalChargesTot;
+/*	double charges[2000];
 	double chargesTot[2000];
 	double signal[2000];
 	double pions[2000];
 	double nions[2000];
 	double nelec[2000];
 	double clPos[2000];
-	double clNe[2000];
+	double clNe[2000];*/
 };
 
 #endif

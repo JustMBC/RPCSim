@@ -25,6 +25,22 @@ class resultStruct(Structure):
                 ('clNe', c_double * 2000)]
 
 
+class RPCSimResult:
+    
+    def __init__(self, filename):
+        self.filename = filename
+        self.file = open(self.filename, 'rb')
+        self.result = resultStruct()
+        
+    def nextResult(self):
+        x = resultStruct()
+        if self.file.readinto(x) == sizeof(x):
+            self.result = x
+            return True
+        else:
+            return False
+
+"""
 class RPCSimResult():
 	
 	def __init__(self, filename):
@@ -32,10 +48,11 @@ class RPCSimResult():
 		self.file = open(self.filename, 'rb')
 		self.result = resultStruct()
 		
-	def nextResult(self):
-		x = resultStruct()
-		if self.file.readinto(x) == sizeof(x):
-    			self.result = x
-    			return True
-    		else:
-    			return False
+    def nextResult(self):
+        x = resultStruct()
+        if self.file.readinto(x) == sizeof(x):
+            self.result = x
+            return True
+        else:
+            return False
+"""

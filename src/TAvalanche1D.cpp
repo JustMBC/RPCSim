@@ -290,12 +290,17 @@ void TAvalanche1D::makeResultFile() {
 	fResult.thrCrossTimeStep = iThrCrossTimeStep;
 	fResult.avalStatus = eAvalStatus;
 	fResult.computeTime = fElapsed;
+	fResult.streamer = bStreamer;
 	fResult.nCluster = fClustersX.size();
 	/*fResult.charges_size = fCharges.size();
 	fResult.chargesTot_size = fTotalCharges.size();
 	fResult.signal_size = fSignal.size();*/
 	fResult.size = fCharges.size();
-	fResult.streamer = bStreamer;
+	fResult.finalChargesTot = fTotalCharges[fTotalCharges.size() - 1];
+
+	/*
+	fResult.chargesTot = fTotalCharges[fTotalCharges.size() - 1];
+
 	for (uint i=0; i<fCharges.size(); i++ )
 		fResult.charges[i] = fCharges[i];
 	for (uint i=0; i<fTotalCharges.size(); i++ )
@@ -309,13 +314,16 @@ void TAvalanche1D::makeResultFile() {
 	for (uint i=0; i<fCharges.size(); i++)
 		fResult.nelec[i] = fNElectrons[i];
 		
+
 	int index=0;
 	for (map<double, int>::iterator it=fClustersX.begin(); it!=fClustersX.end(); it++) {
 		fResult.clNe[index] = it->second;
 		fResult.clPos[index] = it->first;
 		index++;
-	}
 		
+	}
+	*/
+
 }
 
 void TAvalanche1D::simulateEvent(){
