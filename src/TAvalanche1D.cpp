@@ -394,14 +394,14 @@ void TAvalanche1D::computeInducedSignal2(){
 	// drift velocity in cm/ns
 	double e0 = Constants::ElectronCharge; //1.60217657e-19; //Coulombs
 	double eps = fAnodePermittivity; 	//10.;
-	double weightingField = eps/(fCathodeWidth+fAnodeWidth + fGapWidth*eps);
+	double weightingField = eps/(fCathodeWidth + fAnodeWidth + fGapWidth*eps);
 
 	double sig = 0;
 	double charges = 0;
 
 	for(int z=0; z < iNstep; z++){
-		sig += weightingField * fVx.at(z)*1e9 * e0*fElecDetectorGrid[z];
-		charges += weightingField * e0*fElecDetectorGrid[z] * fDx;
+		sig += weightingField * fVx.at(z) * 1e9 * e0 * fElecDetectorGrid[z]; //convert Vx from cm/ns to cm/s
+		charges += weightingField * e0 * fElecDetectorGrid[z] * fDx;
 	}
 	
 	fSignal.push_back(sig);
