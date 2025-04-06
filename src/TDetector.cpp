@@ -306,16 +306,23 @@ void TDetector::writeGasTransportParameters(){
 }
 
 void TDetector::setGarfieldSeed( const int& s ) {
-	cout.setstate(ios_base::failbit);
+//	cout.setstate(ios_base::failbit);
 //  old code:
 //	Garfield::randomEngine.Seed(s);
 //  new code:
-	Garfield::RandomEngineRoot randomEngine(s); // Initialize with a seed
-	Garfield::Random::SetEngine(randomEngine);  // Set the engine globally
-	cout.clear();
+
+//	Garfield::RandomEngineRoot myRandomEngineRoot(s); // Initialize with a seed
+//	cout << "myRandomEngineRoot has seed = " << myRandomEngineRoot.GetSeed() << endl;
+//	Garfield::Random::SetEngine(myRandomEngineRoot);  // Set the engine globally
+
+	Garfield::RandomEngineSTL myRandomEngineSTL(s);
+	Garfield::Random::SetEngine(myRandomEngineSTL);
+//	cout << "myRandomEngineSTL has seed: " << myRandomEngineSTL.GetSeed() << endl;
+//	cout << "is it the same as fSeed = " << s << endl;
+//	cout.clear();
 	
 	if (fConfig.verbosityLevel >= 1)
-		cout << "Garfield TRandom3 seed: " << s << endl;
+		cout << "Garfield::RandomEngineSTL seed: " << s << endl;
 }
 
 double TDetector::R(const double& k, const double& z, const double& zp){

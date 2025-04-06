@@ -15,11 +15,13 @@ git lfs track "/pathToFile/file.file"
 to push bash:
 git add .
 git commit -m "message"
-git push --set-upstream origin master
+git push
 
 to reset if a file too large is accidentally committed bash:
 git reset origin/master
 
 
 after compiling, run by bashing:
-time ./sim --config ./config/CONFIG_FILE.xml
+./sim --config ./config/CONFIG_FILE.xml
+or
+nohup ./sim --config ./config/CONFIG_FILE.xml > out/OUTPUT_FILE.out 2>&1 &

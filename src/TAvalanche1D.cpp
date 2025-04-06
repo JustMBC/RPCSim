@@ -175,7 +175,7 @@ void TAvalanche1D::computeElectronsProduction(const string& particleName, const 
 	track->SetMomentum(P);
 	
 	for(int i=0; i<nTracks; i++){
-		track->NewTrack(0, 0, 0, 0, 1., 0, 0);
+		track->NewTrack(0., 0., 0., 0., 1., 0., 0.);
 		double xc = 0., yc = 0., zc = 0., tc = 0.;
 	    int nc = 0;
 	    double ec = 0.;
@@ -191,6 +191,7 @@ void TAvalanche1D::computeElectronsProduction(const string& particleName, const 
 	}
 	
 	data.close();
+	clSize.close(); //added this
 	delete track;
 }
 
@@ -213,6 +214,7 @@ void TAvalanche1D::initialiseTrackHeed(){
 	else
 		fSeed = getUUID();
 	
+//	cout << "getUUID() seed (or assigned Garfield seed) = " << fSeed << endl;
 	fDet->setGarfieldSeed(fSeed);
 
 	Garfield::TrackHeed* track = new Garfield::TrackHeed();
@@ -233,9 +235,13 @@ void TAvalanche1D::initialiseTrackHeed(){
 	double dummy = 0.; 							// Dummy variable (not used at present)
 	fNElectrons = vector<double> (iNElectronsSize,0);
 	
-	cout << "Cluster density for " << fConfig.particleName << " with momentum " << fConfig.particleMomentum << " : " << track->GetClusterDensity() << endl;
+	cout << "Cluster density for " << fConfig.particleName << " with momentum " << toString(fConfig.particleMomentum) << " : " << track->GetClusterDensity() << endl;
 	
+//	cout << "nc = " << toString(nc) << endl;
+//	cout << "NElectrons (before loop) = " << toString(fNElectrons[0]) << endl;
+
 	while (track->GetCluster(xc, yc, zc, tc, nc, ec, dummy)){
+		cout << "nc = " << toString(nc) << endl;
 		fClustersX[xc] = nc;
 		fClustersY[yc] = nc;
 		fClustersZ[zc] = nc;
@@ -245,11 +251,13 @@ void TAvalanche1D::initialiseTrackHeed(){
 		fPosIonDetectorGrid[int(trunc(xc/fDx))] += nc;
 	}
 	
+//	cout << "NElectrons (after loop) = " << toString(fNElectrons[0]) << endl;
+
 	fClusterDensity = track->GetClusterDensity();
 	delete track;
-	
-	if (iVerbosityLevel >= 2)
-		cout << "TAvalanche1D::initialiseTrackHeed -- " << toString( fNElectrons[0] ) << " electrons produced by heed track." << endl;
+
+	if (iVerbosityLevel >= 1)
+		cout << "TAvalanche1D::initialiseTrackHeed -- " << toString(fNElectrons[0]) << " electrons produced by heed track." << endl;
 	
 	bAvalancheInitialised = true;
 }

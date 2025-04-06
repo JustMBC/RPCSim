@@ -49,6 +49,7 @@ src/TAvalanche1D.o: src/TAvalanche1D.cpp src/TAvalanche1D.hpp \
  /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/TMathBase.h \
  /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/ROOT/TypeTraits.hxx \
  /usera/mlc95/garfieldpp/install/include/Garfield/RandomEngine.hh \
+ /usera/mlc95/garfieldpp/install/include/Garfield/RandomEngineSTL.hh \
  src/helper_functions.hpp src/TTimer.hpp src/TResult.hpp \
  src/TAvalError.hpp src/TConstants.hpp
 src/TAvalanche1D.hpp:
@@ -112,6 +113,7 @@ src/integration.hpp:
 /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/TMathBase.h:
 /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/ROOT/TypeTraits.hxx:
 /usera/mlc95/garfieldpp/install/include/Garfield/RandomEngine.hh:
+/usera/mlc95/garfieldpp/install/include/Garfield/RandomEngineSTL.hh:
 src/helper_functions.hpp:
 src/TTimer.hpp:
 src/TResult.hpp:

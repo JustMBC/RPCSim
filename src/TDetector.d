@@ -44,6 +44,7 @@ src/TDetector.o: src/TDetector.cpp src/TDetector.hpp src/TConfig.hpp \
  /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/TMathBase.h \
  /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/ROOT/TypeTraits.hxx \
  /usera/mlc95/garfieldpp/install/include/Garfield/RandomEngine.hh \
+ /usera/mlc95/garfieldpp/install/include/Garfield/RandomEngineSTL.hh \
  src/helper_functions.hpp src/RngStream.hpp src/TRandomEngine.hpp \
  src/TRandomEngineMT.hpp src/TGenMT.hpp src/dcmt/include/dc.h \
  src/TRandomEngineMRG.hpp src/TRandomEngineSFMT.hpp src/SFMT/SFMT.h \
@@ -97,6 +98,7 @@ src/integration.hpp:
 /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/TMathBase.h:
 /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.34.04-2bf94/x86_64-el9-gcc13-opt/include/ROOT/TypeTraits.hxx:
 /usera/mlc95/garfieldpp/install/include/Garfield/RandomEngine.hh:
+/usera/mlc95/garfieldpp/install/include/Garfield/RandomEngineSTL.hh:
 src/helper_functions.hpp:
 src/RngStream.hpp:
 src/TRandomEngine.hpp:

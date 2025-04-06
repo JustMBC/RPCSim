@@ -48,7 +48,7 @@ void TAvalanche::computeElectronsProduction(const TDetector* det, const string& 
 	track->SetMomentum(P);
 	
 	for(int i=0; i<nTracks; i++){
-		track->NewTrack(0, 0, 0, 0, 1., 0., 0);
+		track->NewTrack(0, 0, 0, 0, 1., 0, 0);
 		double xc = 0., yc = 0., zc = 0., tc = 0.;
 	    int nc = 0;
 	    double ec = 0.;

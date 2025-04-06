@@ -1,0 +1,59 @@
+nohup: ignoring input
+Configuration:
+   Detector:
+	 gap width: 0.12
+	 steps: 500
+	 electric field: 56000
+	 ebar calculation steps: 140
+	 anode: 0.07 cm, epsilon=7
+	 cathode: 0.11 cm, epsilon=7
+	 threshold: 0.1 pC
+   Gas composition:
+	 temperature: 293.15
+	 pressure: 760
+	 gases: 3
+	 gas 0 -- name: c2h2f4 - percentage: 93
+	 gas 1 -- name: sf6 - percentage: 2
+	 gas 2 -- name: co2 - percentage: 5
+   Simulation parameters:
+	 particle: muon
+	 momentum: 5e+09
+	 x0: 0
+	 theta: 0
+	 events to simulate: 1
+	 threads to use: 1
+	 outfile path: out/calice_56kV_test.dat
+	 generator: SFMT
+	 random global seed
+	 Debug outputs: 1
+	 verbose: 1
+	 verbosity level: 1
+	 snapshots: 0
+Init SFMT generator with random seed: 3717787146
+MediumMagboltz::SetComposition: C2H2F4/SF6/CO2 (93/2/5)
+	Gas table file: C2H2F4-0.93_SF6-0.02_CO2-0.05_temp-293.15_pres-760.gas
+MediumMagboltz::LoadGasFile:
+    Reading file gastables/C2H2F4-0.93_SF6-0.02_CO2-0.05_temp-293.15_pres-760.gas.
+    Version 13.
+    Gas composition set to CO2/SF6/C2H2F4 (5/2/93).
+
+Transport parameters:
+	alpha: 198.736 cm-1
+	eta: 51.11 cm-1
+	E: 56000 kV/cm
+	Drift velocity: (0.0116169,0,0) cm/ns
+	Ion Drift velocity: (0,0,0) cm/ns
+	Diffusion coefficient: (0.0103326, 0.0119262) cm-1/2
+	Dt: 0.0206596 ns
+
+EbarTable filename: fDiffT:0.0119262-gapWidth:0.12-eps1:7-eps3:7-cathode:0.11-anode:0.07-Nstep:500-Dx:0.00024-EbarTableSize:140
+Hash representation: 11315066792596366098
+TAvalanche::Computing cluster density.
+TAvalanche::Computing electron density and cluster size.
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+
+Initialising avalanche (Id: 0) with Heed track (thread 0) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield TRandom3 seed: 1691032203
+Cluster density for muon with momentum 5e+09 : 89.3777
+2025-04-06.17:20:36 - Avalanche simulation id 0 (0nth simulation) terminated with success (952 seconds).
+

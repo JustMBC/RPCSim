@@ -38,6 +38,7 @@
 #include "TrackHeed.hh"
 #include "Random.hh"
 #include "RandomEngineRoot.hh"
+#include "RandomEngineSTL.hh"
 
 #if defined( _PYTHON ) || defined( PYTHON ) || defined (__PYTHON__)
 #   ifndef PYTHON
