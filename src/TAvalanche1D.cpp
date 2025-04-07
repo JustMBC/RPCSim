@@ -241,7 +241,7 @@ void TAvalanche1D::initialiseTrackHeed(){
 //	cout << "NElectrons (before loop) = " << toString(fNElectrons[0]) << endl;
 
 	while (track->GetCluster(xc, yc, zc, tc, nc, ec, dummy)){
-		cout << "nc = " << toString(nc) << endl;
+	//	cout << "nc = " << toString(nc) << endl;
 		fClustersX[xc] = nc;
 		fClustersY[yc] = nc;
 		fClustersZ[zc] = nc;
@@ -682,7 +682,7 @@ bool TAvalanche1D::propagate() {
 		//if (bHasReachSpaceChargeLimit and !bComputeSpaceChargeEffet)
 		//	nProduced = n;
 		//else 
-			nProduced = electronMultiplication(n);
+		nProduced = electronMultiplication(n);
 		
 		if (eAvalStatus != AVAL_NO_ERROR)
 			return false;
