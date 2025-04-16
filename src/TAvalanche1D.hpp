@@ -192,6 +192,11 @@ class TAvalanche1D : public TAvalanche {
 	bool fDebugOutputs;
 	bool bSimUntilThr;
 	
+	bool bSimUntilElecThr;
+	bool bElecThrReached;
+	double fElecThr;
+	int iElecThrReachedTime;
+
 	bool bStreamer;
 	double fStreamerThr;
 	

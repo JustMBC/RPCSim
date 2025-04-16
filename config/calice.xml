@@ -45,7 +45,7 @@
 	<Events>48</Events>
 	<Threads>24</Threads>
 	
-	<OutFile>calice_52kV_48events_run1.dat</OutFile>
+	<OutFile>calice_52kV_ElecThr.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

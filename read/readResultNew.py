@@ -17,6 +17,8 @@ class resultStruct(Structure):
 #                ('signal_size', c_uint),
                 ('size', c_uint),
                 ('finalChargesTot', c_double)
+                ('ElecThr', c_double)
+                ('ElecThrReachedTime', c_int)
 #                ('charges', c_double * 2000),
 #                ('chargesTot', c_double)
 #                ('signal', c_double * 2000),

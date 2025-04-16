@@ -37,6 +37,8 @@ struct TResult
 	int nCluster;
 	uint size;
 	double finalChargesTot;
+	double ElecThr;
+	int ElecThrReachedTime;
 /*	double charges[2000];
 	double chargesTot[2000];
 	double signal[2000];

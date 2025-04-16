@@ -100,13 +100,19 @@ void TAvalanche1D::init() {
 	bStreamer = false;
 	fStreamerThr = 4.85e8;
 	
+	// new variables:
+	bSimUntilElecThr = false;
+	bElecThrReached = false;	// alternative threshold set by number of electrons
+	fElecThr = 18724528;	// number of electrons corresponding to a charge of 3pC
+	iElecThrReachedTime = -1;
+
 	bDummyRun = false;
-	bSimUntilThr = false;
+	bSimUntilThr = false;	// changed to true
 	bOnlyMultiplicationAvalanche = fConfig.onlyMult;
 	
 	fDebugOutputs = fConfig.debugOutput;
 	
-	fLongiDiffTimeLimit = 1400;
+	fLongiDiffTimeLimit = 1400; // originally set to 1400
 	
 	if ( bEbarComputed ) {
 		iEbarTableSize = fDet->getEbarTableSize();
@@ -305,6 +311,8 @@ void TAvalanche1D::makeResultFile() {
 	fResult.signal_size = fSignal.size();*/
 	fResult.size = fCharges.size();
 	fResult.finalChargesTot = fTotalCharges[fTotalCharges.size() - 1];
+	fResult.ElecThr = fElecThr;
+	fResult.ElecThrReachedTime = iElecThrReachedTime;
 
 	/*
 	fResult.chargesTot = fTotalCharges[fTotalCharges.size() - 1];
@@ -736,7 +744,7 @@ bool TAvalanche1D::avalanche() {
 		
 		if (!bStreamer and fNElectrons[iTimeStep] >= fStreamerThr)
 			bStreamer = true;
-			
+
 		computeInducedSignal2();
 		
 		if ( iTimeStep > iNElectronsSize ) {
@@ -764,6 +772,18 @@ bool TAvalanche1D::avalanche() {
 			
 		//if (!bComputeSpaceChargeEffet and !bHasReachSpaceChargeLimit and fNElectrons[iTimeStep]>fSpaceChargeLimit)
 		//	bHasReachSpaceChargeLimit = true;
+		
+		// new check if number of electrons exeeds set limit
+		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr)
+			cout << "electron threshold reached" << endl;
+			cout << "time step: " << iTimeStep << "\t Nelec: " << fNElectrons[iTimeStep] << "\t" << "NelecLastBin: " << fNelecAnode;
+			cout << " " << -sumVec(fPosIonDetectorGrid)+sumVec(fElecDetectorGrid)+sumVec(fNegIonDetectorGrid) << endl;
+			
+			iElecThrReachedTime = iTimeStep;
+			bElecThrReached = true;
+
+		if (bElecThrReached and bSimUntilElecThr)
+			break;
 		
 		if (bThrCrossTime and bSimUntilThr)
 			break;
