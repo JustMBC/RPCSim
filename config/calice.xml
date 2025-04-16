@@ -9,7 +9,7 @@
 			<width>0.11</width>
 			<permittivity>7</permittivity>
     </Cathode>
-    <ElectricField>52000</ElectricField>
+    <ElectricField>53000</ElectricField>
     <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -42,7 +42,7 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>48</Events>
+	<Events>24</Events>
 	<Threads>24</Threads>
 	
 	<OutFile>calice_52kV_ElecThr.dat</OutFile>

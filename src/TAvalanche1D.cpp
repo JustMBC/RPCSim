@@ -107,7 +107,7 @@ void TAvalanche1D::init() {
 	iElecThrReachedTime = -1;
 
 	bDummyRun = false;
-	bSimUntilThr = false;	// changed to true
+	bSimUntilThr = false;
 	bOnlyMultiplicationAvalanche = fConfig.onlyMult;
 	
 	fDebugOutputs = fConfig.debugOutput;
@@ -774,14 +774,15 @@ bool TAvalanche1D::avalanche() {
 		//	bHasReachSpaceChargeLimit = true;
 		
 		// new check if number of electrons exeeds set limit
-		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr)
-			cout << "electron threshold reached" << endl;
-			cout << "time step: " << iTimeStep << "\t Nelec: " << fNElectrons[iTimeStep] << "\t" << "NelecLastBin: " << fNelecAnode;
-			cout << " " << -sumVec(fPosIonDetectorGrid)+sumVec(fElecDetectorGrid)+sumVec(fNegIonDetectorGrid) << endl;
+		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr) {
+			cout << "electron threshold reached at time step: " << iTimeStep << endl;
+			cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
+			cout << "iTimeStep = " << iTimeStep << endl;
 			
 			iElecThrReachedTime = iTimeStep;
 			bElecThrReached = true;
-
+		}
+		
 		if (bElecThrReached and bSimUntilElecThr)
 			break;
 		
