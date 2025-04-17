@@ -9,8 +9,9 @@
 /*                                                                */
 /* Updates by D. Hill - March 2016                                */
 /* -------------------------------------------------------------- */
-
+#ifdef __cplusplus
 extern "C" {
+#endif
 
 #include "MT.h"
 
@@ -307,5 +308,6 @@ double genrand_real2(void)
 //}
 
 /* -------------------------------------------------------------- */
-
+#ifdef __cplusplus
 }
+#endif

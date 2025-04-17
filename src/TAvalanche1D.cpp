@@ -595,8 +595,8 @@ void TAvalanche1D::computeLongitudinalDiffusion() {
 			newPos = Gaus(pos, sigma, fRngLongiDiff);
 			newPosIndex = (int)trunc(newPos/fDx);
 			
-			if ( newPosIndex >= iNstep)
-				 newPosIndex = iNstep-1;
+			if (newPosIndex >= iNstep)
+				newPosIndex = iNstep-1;
 			else if (newPosIndex < 0)
 				newPosIndex = 0;
 			

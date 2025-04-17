@@ -11,8 +11,9 @@ Also Makefile is not _bullet-proof_ and has to be edited depending on your distr
 Note that some files are too large to be uploaded to this repo
 Track then with Git LFS:
 git lfs track "/pathToFile/file.file"
+or add this manually to .gitattributes
 
-to push bash:
+to push to remote repo bash:
 git add .
 git commit -m "message"
 git push
@@ -25,3 +26,9 @@ after compiling, run by bashing:
 ./sim --config ./config/CONFIG_FILE.xml
 or
 nohup ./sim --config ./config/CONFIG_FILE.xml > out/OUTPUT_FILE.out 2>&1 &
+
+
+the output file is a binary file with its name set in the config.xml file
+move it into the read directory and run:
+python readResultNew.py binaryOutputFile.bin csvOutputFile.csv
+to get a csv file with the outputs defined in readResultNew.py and TAvalanche1D.cpp

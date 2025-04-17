@@ -9,7 +9,7 @@
 			<width>0.11</width>
 			<permittivity>7</permittivity>
     </Cathode>
-    <ElectricField>53000</ElectricField>
+    <ElectricField>51000</ElectricField>
     <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -45,7 +45,7 @@
 	<Events>24</Events>
 	<Threads>24</Threads>
 	
-	<OutFile>calice_52kV_ElecThr.dat</OutFile>
+	<OutFile>calice_51kV_ElecThr.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
