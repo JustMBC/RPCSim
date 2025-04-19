@@ -245,9 +245,10 @@ void TDetector::initialiseDetector(){
 	fDt = fDx/fVx; //ns
 	
 	// If we simulate avalanche, check if alpha and eta are greater than 0 (otherwise no point in carrying on) ...
-	if (!fConfig.noAvalanche)
-		assert(  (fAlpha>0) and (fEta>0) );
-	
+//	if (!fConfig.noAvalanche)
+//		assert(  (fAlpha>0) and (fEta>0) );
+// isobutane has eta = 0 but lets see what happens	
+
 	cout << endl;
 	cout << "Transport parameters:" << endl;
 	cout << "\talpha: " << fAlpha << " cm-1" << endl;
@@ -629,7 +630,7 @@ void TDetector::makeEbarTable( bool const& binary ){
 		for(j=0; j<n; j++){	//zp
 			for(k=0; k<n; k++){	//l
 				//cout << m*div << endl;
-				cout << "\r" << std::fixed << std::setprecision(2) << m*div << " %" << flush;
+				//cout << "\r" << std::fixed << std::setprecision(2) << m*div << " %" << flush;
 				double Ebar = computeEbar( fEbarZarray[i], fEbarLarray[k], fEbarZparray[j] );
 				//cout << fEbarZarray[i] << "\t" << fEbarZparray[j] << "\t" << fEbarLarray[k] << "\t" << Ebar << endl;
 				fEbarVecTable[ (long)i*(long)n*(long)n + (long)j*(long)n + (long)k ] = Ebar;

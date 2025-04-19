@@ -99,12 +99,16 @@ void TAvalanche1D::init() {
 	
 	bStreamer = false;
 	fStreamerThr = 4.85e8;
+	bSimUntilStreamer = true;
 	
 	// new variables:
 	bSimUntilElecThr = false;
 	bElecThrReached = false;	// alternative threshold set by number of electrons
 	fElecThr = 18724528;	// number of electrons corresponding to a charge of 3pC
 	iElecThrReachedTime = -1;
+	fElecMax = 0;
+	fChargeMax = 0;
+
 
 	bDummyRun = false;
 	bSimUntilThr = false;
@@ -313,6 +317,8 @@ void TAvalanche1D::makeResultFile() {
 	fResult.finalChargesTot = fTotalCharges[fTotalCharges.size() - 1];
 	fResult.ElecThr = fElecThr;
 	fResult.ElecThrReachedTime = iElecThrReachedTime;
+	fResult.ElecMax = fElecMax;
+	fResult.ChargeMax = fChargeMax;
 
 	/*
 	fResult.chargesTot = fTotalCharges[fTotalCharges.size() - 1];
@@ -420,6 +426,10 @@ void TAvalanche1D::computeInducedSignal2(){
 		charges += weightingField * e0 * fElecDetectorGrid[z] * fDx;
 	}
 	
+	if (charges > fChargeMax) {
+		fChargeMax = charges;
+	}
+
 	fSignal.push_back(sig);
 	fCharges.push_back(charges);
 	
@@ -517,6 +527,7 @@ double TAvalanche1D::electronMultiplication(const double& n){
 		double c = multiplicationCLT(fDx,n);
 		if( eAvalStatus  == AVAL_CLT_FAIL or eAvalStatus == AVAL_EXPLOSIVE_BEHAVIOR_CLT ) {
 			/* CLT has failed to return an acceptable value. Try with classic multiplication */
+			cout << "clt failed" << endl;
 			for(int i=0; i<n; i++){
 				s = fRngMult->RandU01();
 				if (s==1)	s = fRngMult->RandU01();
@@ -736,15 +747,37 @@ bool TAvalanche1D::avalanche() {
 			}
 		}*/
 		
+		// check if number of electrons exeeds set limit
+		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr) {
+		//	cout << "electron threshold reached at time step: " << iTimeStep << endl;
+		//	cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
+		//	cout << "iTimeStep = " << iTimeStep << endl;
+			
+			iElecThrReachedTime = iTimeStep;
+			bElecThrReached = true;
+		}
+		
+		// save the number of electrons if it is the peak
+		if (fNElectrons[iTimeStep] > fElecMax) {
+			fElecMax = fNElectrons[iTimeStep];
+		}
+		
+		// check if the number of electrons exceeds the amount needed for a streamer
+		if (!bStreamer and fNElectrons[iTimeStep] >= fStreamerThr)
+			bStreamer = true;
+
+		// stop simulation if we get a streamer as the number of electrons now grows rapidly, slowing the simulation to a halt
+		if (bStreamer and bSimUntilStreamer) {
+			computeInducedSignal2();
+			break;
+		}
+
 		if ( !bOnlyMultiplicationAvalanche )
 			computeLongitudinalDiffusion();
 		
 		if (eAvalStatus != AVAL_NO_ERROR)
 			return false;
 		
-		if (!bStreamer and fNElectrons[iTimeStep] >= fStreamerThr)
-			bStreamer = true;
-
 		computeInducedSignal2();
 		
 		if ( iTimeStep > iNElectronsSize ) {
@@ -773,16 +806,7 @@ bool TAvalanche1D::avalanche() {
 		//if (!bComputeSpaceChargeEffet and !bHasReachSpaceChargeLimit and fNElectrons[iTimeStep]>fSpaceChargeLimit)
 		//	bHasReachSpaceChargeLimit = true;
 		
-		// new check if number of electrons exeeds set limit
-		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr) {
-			cout << "electron threshold reached at time step: " << iTimeStep << endl;
-			cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
-			cout << "iTimeStep = " << iTimeStep << endl;
-			
-			iElecThrReachedTime = iTimeStep;
-			bElecThrReached = true;
-		}
-		
+		// stop simulation if we want when these thresholds are reached
 		if (bElecThrReached and bSimUntilElecThr)
 			break;
 		

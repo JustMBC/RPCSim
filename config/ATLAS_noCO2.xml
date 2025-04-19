@@ -2,15 +2,15 @@
     <GapWidth>0.1</GapWidth>
     <Steps>500</Steps>
     <Anode>
-			<width>0.15</width>
+			<width>0.12</width>
 			<permittivity>5</permittivity>
     </Anode>
     <Cathode>
-			<width>0.15</width>
+			<width>0.12</width>
 			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>57500</ElectricField>
-    <Threshold>3</Threshold>
+    <ElectricField>60000</ElectricField>
+    <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -42,10 +42,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>4</Events>
-	<Threads>4</Threads>
+	<Events>1</Events>
+	<Threads>1</Threads>
 	
-	<OutFile>ATLAS_noCO2_57.5kV_3.dat</OutFile>
+	<OutFile>ATLAS_noCO2_60kV_streamerTest.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
@@ -58,7 +58,7 @@
 	</SingleCluster> -->
 	
 	<Verbose>1</Verbose>
-	<VerbosityLevel>1</VerbosityLevel>
-	<Snapshots>0</Snapshots>
+	<VerbosityLevel>2</VerbosityLevel>
+	<Snapshots>1</Snapshots>
 	<DebugOutput>1</DebugOutput>
 </Simulation>

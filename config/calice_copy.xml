@@ -9,7 +9,7 @@
 			<width>0.11</width>
 			<permittivity>7</permittivity>
     </Cathode>
-    <ElectricField>51000</ElectricField>
+    <ElectricField>52000</ElectricField>
     <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -45,7 +45,7 @@
 	<Events>2</Events>
 	<Threads>2</Threads>
 	
-	<OutFile>calice_51kV_2events_garfieldseed-1.dat</OutFile>
+	<OutFile>calice_52kV_diffMT.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

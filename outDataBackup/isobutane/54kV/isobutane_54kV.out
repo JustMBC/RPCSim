@@ -1,0 +1,69 @@
+nohup: ignoring input
+Configuration:
+   Detector:
+	 gap width: 0.1
+	 steps: 500
+	 electric field: 54000
+	 ebar calculation steps: 140
+	 anode: 0.15 cm, epsilon=5
+	 cathode: 0.15 cm, epsilon=5
+	 threshold: 0.1 pC
+   Gas composition:
+	 temperature: 293.15
+	 pressure: 760
+	 gases: 1
+	 gas 0 -- name: isobutane - percentage: 100
+   Simulation parameters:
+	 particle: muon
+	 momentum: 5e+09
+	 x0: 0
+	 theta: 0
+	 events to simulate: 2
+	 threads to use: 2
+	 outfile path: out/isobutane_54kV.dat
+	 generator: SFMT
+	 random global seed
+	 Debug outputs: 1
+	 verbose: 1
+	 verbosity level: 1
+	 snapshots: 0
+Init SFMT generator with random seed: 2714947909
+MediumMagboltz::SetComposition: iC4H10
+	Gas table file: iC4H10-1_temp-293.15_pres-760.gas
+MediumMagboltz::LoadGasFile:
+    Reading file gastables/iC4H10-1_temp-293.15_pres-760.gas.
+    Version 13.
+    Gas composition set to iC4H10.
+
+Transport parameters:
+	alpha: 85.4529 cm-1
+	eta: 0 cm-1
+	E: 54000 kV/cm
+	Drift velocity: (0.00805196,0,0) cm/ns
+	Ion Drift velocity: (0,0,0) cm/ns
+	Diffusion coefficient: (0.00770702, 0.0116395) cm-1/2
+	Dt: 0.0248387 ns
+
+EbarTable filename: fDiffT:0.0116395-gapWidth:0.1-eps1:5-eps3:5-cathode:0.15-anode:0.15-Nstep:500-Dx:0.0002-EbarTableSize:140
+Hash representation: 4570915256466079228
+Computing Ebar Table ... 
+
+
+TAvalanche::Computing cluster density.
+TAvalanche::Computing electron density and cluster size.
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+
+Initialising avalanche (Id: 0) with Heed track (thread 0) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -19092899
+Cluster density for muon with momentum 5e+09 : 109.96
+TAvalanche1D::initialiseTrackHeed -- 24 electrons produced by heed track.
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+
+Initialising avalanche (Id: 1) with Heed track (thread 1) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 163580918
+Cluster density for muon with momentum 5e+09 : 109.96
+TAvalanche1D::initialiseTrackHeed -- 18 electrons produced by heed track.
+2025-04-17.15:17:41 - Avalanche simulation id 0 (0nth simulation) terminated with success (129 seconds).
+
+2025-04-17.15:19:39 - Avalanche simulation id 1 (1nth simulation) terminated with success (247 seconds).
+

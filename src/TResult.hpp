@@ -39,6 +39,8 @@ struct TResult
 	double finalChargesTot;
 	double ElecThr;
 	int ElecThrReachedTime;
+	double ElecMax;
+	double ChargeMax;
 /*	double charges[2000];
 	double chargesTot[2000];
 	double signal[2000];

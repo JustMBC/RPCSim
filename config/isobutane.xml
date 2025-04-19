@@ -3,13 +3,13 @@
     <Steps>500</Steps>
     <Anode>
 			<width>0.15</width>
-			<permittivity>7</permittivity>
+			<permittivity>5</permittivity>
     </Anode>
     <Cathode>
 			<width>0.15</width>
-			<permittivity>7</permittivity>
+			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>56000</ElectricField>
+    <ElectricField>64000</ElectricField>
     <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -24,7 +24,7 @@
 </Gas>
 
 <Simulation>
-	<NoAvalanche>1</NoAvalanche>
+	<NoAvalanche>0</NoAvalanche>
 	<OnlyMultiplication>0</OnlyMultiplication>
 	
 	<Particle>
@@ -34,14 +34,14 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>1</Events>
-	<Threads>1</Threads>
+	<Events>2</Events>
+	<Threads>2</Threads>
 	
-	<OutFile>isobutane.dat</OutFile>
+	<OutFile>isobutane_64kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
-	<GarfieldSeed>58965475</GarfieldSeed>
+	<GarfieldSeed>-1</GarfieldSeed>
 	
 	
 <!--	<SingleCluster>

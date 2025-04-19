@@ -199,6 +199,9 @@ class TAvalanche1D : public TAvalanche {
 
 	bool bStreamer;
 	double fStreamerThr;
+	bool bSimUntilStreamer;
+	double fElecMax;
+	double fChargeMax;
 	
 	int iVerbosityLevel;
 	

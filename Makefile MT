@@ -61,13 +61,13 @@ INCDIRGAR = $(GARFIELD_INSTALL)/include
 HEEDDIR = $(GARFIELD_HOME)/Heed
 GSLDIR = $(GSL_HOME)/lib
 LIBDIR = $(GARFIELD_INSTALL)/lib64
-DCLIB = $(DCMT_HOME)/lib
+DCLIB = $(DCMT_HOME)
 
 MY_CFLAGS =  `root-config --cflags` -fopenmp -Wall -Wno-unused-result -msse2 -DHAVE_SSE2 -I$(INCDIRGAR) -I$(HEEDDIR) -I$(GSLDIR)/include -I$(GARFIELD_INSTALL)/include/Garfield
 
 # The linker options.
-MY_LIBS   =  -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -ldcmt -lGarfield `root-config --glibs` -lgfortran -lgsl -lgslcblas -lssl -lcrypto -L$(ROOTSYS)/lib -lgcc_s -lncurses -lncursesw
-
+MY_LIBS   =  -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -lGarfield `root-config --glibs` -lgfortran -lgsl -lgslcblas -lssl -lcrypto -L$(ROOTSYS)/lib -lgcc_s -lncurses -lncursesw
+# removed -ldcmt
 
 # The pre-processor options used by the cpp (man cpp for more).
 CPPFLAGS  = 

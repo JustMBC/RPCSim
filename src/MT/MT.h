@@ -9,8 +9,9 @@
 /*                                                                */
 /* Updates by D. Hill - March 2016                                */
 /* -------------------------------------------------------------- */
-
+#ifdef __cplusplus
 extern "C" {
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,4 +23,6 @@ void init_genrand(unsigned long s);
 void init_by_array(unsigned long init_key[], int key_length);
 double mtRand(void);
 
+#ifdef __cplusplus
 }
+#endif
