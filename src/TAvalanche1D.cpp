@@ -31,7 +31,6 @@ TAvalanche1D::TAvalanche1D(TDetector* det, TConfig& config, sfmt_t sfmt, const i
 	fRngMisc = new TRandomEngineMT(getUUID());
 	
 	cout << "Longitudinal diffusion generator: " << fRngLongiDiff->Generator() << endl;
-	cout << endl;
 	
 	/* Call to initialisation function */
 	init();
@@ -266,9 +265,10 @@ void TAvalanche1D::initialiseTrackHeed(){
 	fClusterDensity = track->GetClusterDensity();
 	delete track;
 
-	if (iVerbosityLevel >= 1)
+	if (iVerbosityLevel >= 1) {
 		cout << "TAvalanche1D::initialiseTrackHeed -- " << toString(fNElectrons[0]) << " electrons produced by heed track." << endl;
-	
+		cout << endl;
+	}
 	bAvalancheInitialised = true;
 }
 
@@ -388,6 +388,7 @@ void TAvalanche1D::simulateEvent(){
 		/* ========= */
 		makeResultFile();
 		if (iVerbosityLevel >= 1)
+			cout << endl;
 			cout << currentDateTime() << " - Avalanche simulation id " << Id << " (" << countSim << "nth simulation) terminated with success (" << duration_cast<seconds>(elapsed).count() << " seconds)." << endl<< endl;
 	}
 	else{
@@ -399,6 +400,7 @@ void TAvalanche1D::simulateEvent(){
 		fCharges.push_back(-1);
 		makeResultFile();
 		if (iVerbosityLevel >= 1)
+			cout << endl;
 			cout << currentDateTime() << " - Avalanche simulation id " << Id << " (" << countSim << "nth simulation) terminated with error: " << eAvalStatus << " (" << duration_cast<seconds>(elapsed).count() << " seconds)." << endl<< endl;
 	}
 	countSim++;
@@ -789,7 +791,7 @@ bool TAvalanche1D::avalanche() {
 			break;
 		
 		if (iVerbosityLevel >= 2) {
-			cout << "time step: " << iTimeStep << "\t Nelec: " << fNElectrons[iTimeStep] << "\t" << "NelecLastBin: " << fNelecAnode;
+			cout << "Id: " << Id << "time step: " << iTimeStep << "\t Nelec: " << fNElectrons[iTimeStep] << "\t" << "NelecLastBin: " << fNelecAnode;
 			cout << " " << -sumVec(fPosIonDetectorGrid)+sumVec(fElecDetectorGrid)+sumVec(fNegIonDetectorGrid) << endl;
 		}
 		

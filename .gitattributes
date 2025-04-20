@@ -9,7 +9,9 @@ outDataBackup/ATLAS_noCO2_tests/didnt[[:space:]]finish/Ebar.dat filter=lfs diff=
 outDataBackup/ATLAS_noCO2_tests/didnt[[:space:]]finish[[:space:]]2/Ebar.dat filter=lfs diff=lfs merge=lfs -text
 outDataBackup/ATLAS_noCO2_tests/timed[[:space:]]out/Ebar.dat filter=lfs diff=lfs merge=lfs -text
 outDataBackup/ATLAS_noCO2_tests/51kV/Ebar.dat filter=lfs diff=lfs merge=lfs -text
+outDataBackup/ATLAS_noCO2_tests/streamer[[:space:]]test/Ebar.dat filter=lfs diff=lfs merge=lfs -text
 outDataBackup/calice[[:space:]]electhr[[:space:]]test/51kV/Ebar.dat filter=lfs diff=lfs merge=lfs -text
 outDataBackup/calice[[:space:]]electhr[[:space:]]test/52kV/Ebar.dat filter=lfs diff=lfs merge=lfs -text
 outDataBackup/calice[[:space:]]electhr[[:space:]]test/53kV/Ebar.dat filter=lfs diff=lfs merge=lfs -text
 outDataBackup/isobutane/54kV/Ebar.dat filter=lfs diff=lfs merge=lfs -text
+outDataBackup/ATLAS_noCO2/54kV/Ebar.dat filter=lfs diff=lfs merge=lfs -text
