@@ -2,15 +2,15 @@
     <GapWidth>0.1</GapWidth>
     <Steps>500</Steps>
     <Anode>
-			<width>0.15</width>
-			<permittivity>7</permittivity>
+			<width>0.12</width>
+			<permittivity>5</permittivity>
     </Anode>
     <Cathode>
-			<width>0.15</width>
-			<permittivity>7</permittivity>
+			<width>0.12</width>
+			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>56000</ElectricField>
-    <Threshold>0.1</Threshold>
+    <ElectricField>48000</ElectricField>
+    <Threshold>0.002</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -36,7 +36,7 @@
 </Gas>
 
 <Simulation>
-	<NoAvalanche>1</NoAvalanche>
+	<NoAvalanche>0</NoAvalanche>
 	<OnlyMultiplication>0</OnlyMultiplication>
 	
 	<Particle>
@@ -46,10 +46,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>1</Events>
-	<Threads>1</Threads>
+	<Events>72</Events>
+	<Threads>8</Threads>
 	
-	<OutFile>ATLAS_2024.dat</OutFile>
+	<OutFile>ATLAS_2024_48kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
@@ -64,5 +64,5 @@
 	<Verbose>1</Verbose>
 	<VerbosityLevel>1</VerbosityLevel>
 	<Snapshots>0</Snapshots>
-	<DebugOutput>1</DebugOutput>
+	<DebugOutput>0</DebugOutput>
 </Simulation>

@@ -9,8 +9,8 @@
 			<width>0.12</width>
 			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>54000</ElectricField>
-    <Threshold>0.1</Threshold>
+    <ElectricField>51000</ElectricField>
+    <Threshold>3</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -42,10 +42,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>4</Events>
-	<Threads>4</Threads>
+	<Events>72</Events>
+	<Threads>8</Threads>
 	
-	<OutFile>ATLAS_noCO2_test.dat</OutFile>
+	<OutFile>ATLAS_noCO2_51kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
@@ -58,7 +58,7 @@
 	</SingleCluster> -->
 	
 	<Verbose>1</Verbose>
-	<VerbosityLevel>2</VerbosityLevel>
+	<VerbosityLevel>1</VerbosityLevel>
 	<Snapshots>0</Snapshots>
 	<DebugOutput>0</DebugOutput>
 </Simulation>

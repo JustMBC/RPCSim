@@ -76,9 +76,6 @@ void TAvalanche1D::init() {
 	
 	iNElectronsSize = 5*iNstep;
 	
-	fChargeThres = fConfig.threshold * 1.e-12;//100.e-15; //pC to Coulombs
-	iThrCrossTimeStep = -1;
-	
 	fElecDetectorGrid = vector<double> (iNstep,0);
 	fPosIonDetectorGrid = vector<double> (iNstep,0);
 	fNegIonDetectorGrid = vector<double> (iNstep,0);
@@ -86,7 +83,6 @@ void TAvalanche1D::init() {
 	
 	fLongiDiffSigma = fDiffL*sqrt(fDx);
 
-	bThrCrossTime = false;
 	bHasReachSpaceChargeLimit = false;
 	bEbarComputed = fDet->hasEBarTable();
 	bComputeSpaceChargeEffet = true;
@@ -96,21 +92,26 @@ void TAvalanche1D::init() {
 	bSnapshots = fConfig.snaps;
 	iVerbosityLevel = fConfig.verbosityLevel;	
 	
-	bStreamer = false;
-	fStreamerThr = 4.85e8;
+	// sim until conditions:
 	bSimUntilStreamer = true;
-	
-	// new variables:
+	bSimUntilThr = true;	// saves time but don't get to see end of simulation
 	bSimUntilElecThr = false;
+
+	fChargeThres = fConfig.threshold * 1.e-12;//100.e-15; //pC to Coulombs
+	iThrCrossTimeStep = -1;
+	bThrCrossTime = false;
+
+	bStreamer = false;
+	fStreamerThr = 2e8; // ~1e8 from [stocco], can instead use [francais] 4.85e8
+
 	bElecThrReached = false;	// alternative threshold set by number of electrons
-	fElecThr = 18724528;	// number of electrons corresponding to a charge of 3pC
+	fElecThr = 6241; // number of electrons corresponding to a charge of [Camarri 2025] 1-2fC, 6241-12483 electrons (or 3pC, 18724528)
 	iElecThrReachedTime = -1;
+	
 	fElecMax = 0;
 	fChargeMax = 0;
 
-
 	bDummyRun = false;
-	bSimUntilThr = false;
 	bOnlyMultiplicationAvalanche = fConfig.onlyMult;
 	
 	fDebugOutputs = fConfig.debugOutput;
@@ -751,12 +752,11 @@ bool TAvalanche1D::avalanche() {
 		
 		// check if number of electrons exeeds set limit
 		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr) {
-		//	cout << "electron threshold reached at time step: " << iTimeStep << endl;
-		//	cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
-		//	cout << "iTimeStep = " << iTimeStep << endl;
-			
 			iElecThrReachedTime = iTimeStep;
 			bElecThrReached = true;
+		//	cout << "electron threshold reached at time step: " << iTimeStep << endl;
+		//	cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
+		//	cout << "iTimeStep = " << iTimeStep << endl;		
 		}
 		
 		// save the number of electrons if it is the peak
