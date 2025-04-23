@@ -102,7 +102,7 @@ void TAvalanche1D::init() {
 	bThrCrossTime = false;
 
 	bStreamer = false;
-	fStreamerThr = 2e8; // ~1e8 from [stocco], can instead use [francais] 4.85e8
+	fStreamerThr = 4.85e8; // ~1e8 from [stocco], can instead use [francais] 4.85e8
 
 	bElecThrReached = false;	// alternative threshold set by number of electrons
 	fElecThr = 6241; // number of electrons corresponding to a charge of [Camarri 2025] 1-2fC, 6241-12483 electrons (or 3pC, 18724528)
@@ -388,9 +388,10 @@ void TAvalanche1D::simulateEvent(){
 		}
 		/* ========= */
 		makeResultFile();
-		if (iVerbosityLevel >= 1)
+		if (iVerbosityLevel >= 1) {
 			cout << endl;
 			cout << currentDateTime() << " - Avalanche simulation id " << Id << " (" << countSim << "nth simulation) terminated with success (" << duration_cast<seconds>(elapsed).count() << " seconds)." << endl<< endl;
+		}
 	}
 	else{
 		const auto elapsed = fTimer.time_elapsed();
@@ -400,9 +401,10 @@ void TAvalanche1D::simulateEvent(){
 		fSignal.push_back(-1);
 		fCharges.push_back(-1);
 		makeResultFile();
-		if (iVerbosityLevel >= 1)
+		if (iVerbosityLevel >= 1) {
 			cout << endl;
 			cout << currentDateTime() << " - Avalanche simulation id " << Id << " (" << countSim << "nth simulation) terminated with error: " << eAvalStatus << " (" << duration_cast<seconds>(elapsed).count() << " seconds)." << endl<< endl;
+		}
 	}
 	countSim++;
 }
