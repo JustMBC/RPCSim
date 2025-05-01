@@ -43,7 +43,7 @@
 	</Particle>
 	
 	<Events>72</Events>
-	<Threads>72</Threads>
+	<Threads>4</Threads>
 	
 	<OutFile>ATLAS_57kV.dat</OutFile>
 	

@@ -1,0 +1,47 @@
+000 (47120.000.000) 2025-05-01 10:12:16 Job submitted from host: <[2a05:b400:104:100::500:82f]:19363?addrs=[2a05-b400-104-100--500-82f]-19363&alias=el9-06.hep.phy.cam.ac.uk>
+...
+040 (47120.000.000) 2025-05-01 10:12:18 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc22]:40243?addrs=[2a05-b400-104-200--500-dc22]-40243&alias=wcdc-034.hep.phy.cam.ac.uk>
+...
+040 (47120.000.000) 2025-05-01 10:12:32 Finished transferring input files
+...
+001 (47120.000.000) 2025-05-01 10:12:32 Job executing on host: <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
+	SlotName: slot1_18@wcdc-034.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_397741"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 8192
+...
+006 (47120.000.000) 2025-05-01 10:12:42 Image size of job updated: 40
+	1  -  MemoryUsage of job (MB)
+	40  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 10:17:42 Image size of job updated: 261016
+	255  -  MemoryUsage of job (MB)
+	261016  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 10:22:43 Image size of job updated: 261020
+	255  -  MemoryUsage of job (MB)
+	261020  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 10:42:45 Image size of job updated: 261052
+	255  -  MemoryUsage of job (MB)
+	261052  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 11:02:48 Image size of job updated: 262600
+	257  -  MemoryUsage of job (MB)
+	262600  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 11:17:50 Image size of job updated: 264144
+	258  -  MemoryUsage of job (MB)
+	264144  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 11:47:54 Image size of job updated: 265688
+	260  -  MemoryUsage of job (MB)
+	265676  -  ResidentSetSize of job (KB)
+...
+006 (47120.000.000) 2025-05-01 12:07:56 Image size of job updated: 286052
+	280  -  MemoryUsage of job (MB)
+	286052  -  ResidentSetSize of job (KB)
+...
