@@ -60,21 +60,30 @@
 INCDIRGAR = $(GARFIELD_INSTALL)/include
 HEEDDIR = $(GARFIELD_HOME)/Heed
 GSLDIR = $(GSL_HOME)/lib
-LIBDIR = $(GARFIELD_INSTALL)/lib64
+#LIBDIR = $(GARFIELD_INSTALL)/lib64
+LIBDIR = $(HOME)/RPCSim/lib
 DCLIB = $(DCMT_HOME)/lib
 
-MY_CFLAGS =  `root-config --cflags` -fopenmp -Wall -Wno-unused-result -msse2 -DHAVE_SSE2 -I$(INCDIRGAR) -I$(HEEDDIR) -I$(GSLDIR)/include -I$(GARFIELD_INSTALL)/include/Garfield
+MY_CFLAGS = `root-config --cflags` -fopenmp -Wall -Wno-unused-result -msse2 -DHAVE_SSE2 -I$(INCDIRGAR) -I$(HEEDDIR) -I$(GSLDIR)/include -I$(GARFIELD_INSTALL)/include/Garfield
 
 # The linker options.
-MY_LIBS   =  -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -ldcmt -lGarfield `root-config --glibs` -lgfortran -lgsl -lgslcblas -lssl -lcrypto -L$(ROOTSYS)/lib -lgcc_s -lncurses -lncursesw
-
+#removed:  
+MY_LIBS   = -ldcmt -lGarfield -lGarfieldRandom `root-config --glibs` -lgfortran -lgsl -lgslcblas -lssl -lcrypto -lgcc_s -lgcc -lncurses -lncursesw -lstdc++ -ltbb -lvdt
+#MY_LIBS = -static -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -ldcmt -lGarfield \
+          `root-config --static --glibs` -lgfortran -lgsl -lgslcblas \
+          -lssl -lcrypto -L$(ROOTSYS)/lib -lgcc_s -lncurses -lncursesw
 
 # The pre-processor options used by the cpp (man cpp for more).
 CPPFLAGS  = 
 
 # The options used in linking as well as in any direct use of ld.
 # REMOVED: -Wl,-rpath,/usera/mlc95/garfieldpp/install/lib64/ -Wl,-rpath-link,/usera/mlc95/garfieldpp/install/lib64/
-LDFLAGS   = -no-pie -L$(GARFIELD_INSTALL)/lib64 -lGarfield -lGarfieldRandom 
+LDFLAGS   = -no-pie -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -L$(ROOTSYS)/lib -Wl,-rpath,$(LIBDIR) \
+			-L/cvmfs/sft.cern.ch/lcg/views/LCG_107a_ATLAS_2/x86_64-el9-gcc13-opt/lib \
+			-L/cvmfs/sft.cern.ch/lcg/views/LCG_107a_ATLAS_2/x86_64-el9-gcc13-opt/lib64 \
+			-Wl,-rpath,/cvmfs/sft.cern.ch/lcg/releases/gcc/13.1.0-b3d18/x86_64-el9/lib64 \
+			-Wl,-rpath,/cvmfs/sft.cern.ch/lcg/views/LCG_107a_ATLAS_2/x86_64-el9-gcc13-opt/lib \
+			-Wl,-rpath,/cvmfs/sft.cern.ch/lcg/views/LCG_107a_ATLAS_2/x86_64-el9-gcc13-opt/lib64
 
 # The directories in which source files reside.
 # If not specified, only the current directory will be serached.

@@ -42,8 +42,8 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>36</Events>
-	<Threads>36</Threads>
+	<Events>72</Events>
+	<Threads>72</Threads>
 	
 	<OutFile>ATLAS_57kV.dat</OutFile>
 	

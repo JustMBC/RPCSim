@@ -1,0 +1,52 @@
+000 (46295.000.000) 2025-04-30 21:39:52 Job submitted from host: <[2a05:b400:104:100::500:82f]:19363?addrs=[2a05-b400-104-100--500-82f]-19363&alias=el9-06.hep.phy.cam.ac.uk>
+...
+040 (46295.000.000) 2025-04-30 21:40:09 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::dc00:4]:43185?addrs=[2a05-b400-104-200--dc00-4]-43185&alias=dc-cpu-04.hep.phy.cam.ac.uk>
+...
+040 (46295.000.000) 2025-04-30 21:40:14 Finished transferring input files
+...
+001 (46295.000.000) 2025-04-30 21:40:14 Job executing on host: <[2a05:b400:104:200::dc00:4]:33533?addrs=[2a05-b400-104-200--dc00-4]-33533&alias=dc-cpu-04.hep.phy.cam.ac.uk>
+	SlotName: slot1_18@dc-cpu-04.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_1966761"
+	Cpus = 4
+	Disk = 6292481
+	GPUs = 0
+	Memory = 6144
+...
+006 (46295.000.000) 2025-04-30 21:40:23 Image size of job updated: 99016
+	97  -  MemoryUsage of job (MB)
+	99016  -  ResidentSetSize of job (KB)
+...
+006 (46295.000.000) 2025-04-30 21:45:24 Image size of job updated: 3256284
+	3180  -  MemoryUsage of job (MB)
+	3256284  -  ResidentSetSize of job (KB)
+...
+006 (46295.000.000) 2025-04-30 21:50:24 Image size of job updated: 3256316
+	3180  -  MemoryUsage of job (MB)
+	3256316  -  ResidentSetSize of job (KB)
+...
+006 (46295.000.000) 2025-04-30 21:55:25 Image size of job updated: 3256320
+	3180  -  MemoryUsage of job (MB)
+	3256320  -  ResidentSetSize of job (KB)
+...
+040 (46295.000.000) 2025-05-01 09:54:58 Started transferring output files
+...
+040 (46295.000.000) 2025-05-01 09:54:58 Finished transferring output files
+...
+004 (46295.000.000) 2025-05-01 09:54:58 Job was evicted.
+	(0) CPU times
+		Usr 30 02:17:22, Sys 0 00:24:35  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	7400147  -  Run Bytes Sent By Job
+	589105792  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :     50.50        4         4 
+	   Disk (KB)            : 604442     6291456   6292481 
+	   GPUs                 :                            0 
+	   Memory (MB)          :   3180        6144      6144 
+	   TimeExecute (s)      :  44084                       
+	   TimeSlotBusy (s)     :  44089                       
+...
+009 (46295.000.000) 2025-05-01 09:54:58 Job was aborted.
+	via condor_rm (by user mlc95)
+...

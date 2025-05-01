@@ -1,0 +1,22 @@
+universe = vanilla  
+executable = sim_wrapper.sh
+arguments = "--config ./config/ATLAS_57kV.xml"
+Requirements = (OpSysAndVer == "AlmaLinux9")
+
+request_cpus = 12
+request_memory = 8G
+request_disk = 6G
+
+output = out/ATLAS_57kV.out
+error = out/ATLAS_57kV.error
+log = out/ATLAS_57kV.log
+
+getenv = HEED_DATABASE, GARFIELD_INSTALL, GARFIELD_HOME, ROOTSYS, LD_LIBRARY_PATH
+initialdir = /usera/mlc95/RPCSim/
+
+copy_to_spool = true
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+transfer_input_files = sim , ./config , ./gastables , ./EbarTables , ./out
+transfer_output_files = out
+queue
