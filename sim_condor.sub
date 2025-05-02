@@ -1,6 +1,6 @@
 universe = vanilla  
 executable = sim_wrapper.sh
-arguments = "--config ./config/ATLAS_58kV.xml"
+arguments = "--config ./config/ATLAS_2024.xml"
 Requirements = (OpSysAndVer == "AlmaLinux9")
 
 Rank = kflops
@@ -8,9 +8,9 @@ request_cpus = 4
 request_memory = 4G
 request_disk = 2G
 
-output = out/ATLAS_58kV.out
-error = out/ATLAS_58kV.error
-log = out/ATLAS_58kV.log
+output = out/ATLAS_2024_58kV.out
+error = out/ATLAS_2024_58kV.error
+log = out/ATLAS_2024_58kV.log
 
 getenv = HEED_DATABASE, GARFIELD_INSTALL, GARFIELD_HOME, ROOTSYS, LD_LIBRARY_PATH
 initialdir = /usera/mlc95/RPCSim/

@@ -9,8 +9,8 @@
 			<width>0.12</width>
 			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>48000</ElectricField>
-    <Threshold>0.002</Threshold>
+    <ElectricField>58000</ElectricField>
+    <Threshold>3</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -49,7 +49,7 @@
 	<Events>72</Events>
 	<Threads>8</Threads>
 	
-	<OutFile>ATLAS_2024_48kV.dat</OutFile>
+	<OutFile>ATLAS_2024_58kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

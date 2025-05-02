@@ -1,0 +1,31 @@
+000 (47127.000.000) 2025-05-01 20:07:49 Job submitted from host: <[2a05:b400:104:100::500:82f]:19363?addrs=[2a05-b400-104-100--500-82f]-19363&alias=el9-06.hep.phy.cam.ac.uk>
+...
+040 (47127.000.000) 2025-05-01 20:07:49 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc80]:32969?addrs=[2a05-b400-104-200--500-dc80]-32969&alias=wcdc-128.hep.phy.cam.ac.uk>
+...
+040 (47127.000.000) 2025-05-01 20:07:54 Finished transferring input files
+...
+001 (47127.000.000) 2025-05-01 20:07:54 Job executing on host: <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
+	SlotName: slot1_12@wcdc-128.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_174305"
+	Cpus = 4
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+006 (47127.000.000) 2025-05-01 20:08:03 Image size of job updated: 99008
+	97  -  MemoryUsage of job (MB)
+	99008  -  ResidentSetSize of job (KB)
+...
+006 (47127.000.000) 2025-05-01 20:13:04 Image size of job updated: 436612
+	427  -  MemoryUsage of job (MB)
+	436612  -  ResidentSetSize of job (KB)
+...
+006 (47127.000.000) 2025-05-01 20:18:05 Image size of job updated: 436616
+	427  -  MemoryUsage of job (MB)
+	436616  -  ResidentSetSize of job (KB)
+...
+006 (47127.000.000) 2025-05-01 20:28:05 Image size of job updated: 436664
+	427  -  MemoryUsage of job (MB)
+	436664  -  ResidentSetSize of job (KB)
+...
