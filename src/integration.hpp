@@ -158,7 +158,8 @@ namespace Rosetta {
                     double dr = 1;
  
                     // Find zero
-                    Evaluation eval(cos(M_PI * (i - 0.25) / (eDEGREE + 0.5)));
+                    // need to explicitly cast eDEGREE to a numeric type before performing floating-point arithmetic
+                    Evaluation eval(cos(M_PI * (i - 0.25) / (static_cast<double>(eDEGREE) + 0.5)));
                     do {
                         dr = eval.v() / eval.d();
                         eval.evaluate(eval.x() - dr);

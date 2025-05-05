@@ -245,9 +245,9 @@ void TDetector::initialiseDetector(){
 	fDt = fDx/fVx; //ns
 	
 	// If we simulate avalanche, check if alpha and eta are greater than 0 (otherwise no point in carrying on) ...
-//	if (!fConfig.noAvalanche)
-//		assert(  (fAlpha>0) and (fEta>0) );
-// isobutane has eta = 0 but lets see what happens	
+	if (!fConfig.noAvalanche)
+		assert(  (fAlpha>0) and (fEta>0) );
+	// isobutane has eta = 0 but lets see what happens	
 
 	cout << endl;
 	cout << "Transport parameters:" << endl;
@@ -624,7 +624,7 @@ void TDetector::makeEbarTable( bool const& binary ){
 
 	int i,j,k;
 	double m=0;
-	double div = 100./size;
+	//double div = 100./size;
 	#pragma omp parallel for private(j,k) collapse(3)
 	for(i=0; i<n; i++){	//z
 		for(j=0; j<n; j++){	//zp
@@ -758,8 +758,8 @@ void TDetector::plotSC(){
 	data.close();
 	*/
 	
-	double zp = 0.8*0.001;
-	double z = 0.8*0.001;
+	//double zp = 0.8*0.001;
+	//double z = 0.8*0.001;
 	ofstream data("out/ebarTot.dat", ios::out | ios::trunc);
 	vector<double> l = linspace(0,0.14,200);
 	

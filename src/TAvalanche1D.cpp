@@ -530,9 +530,9 @@ double TAvalanche1D::electronMultiplication(const double& n){
 	
 	if(n > fThrCLT){
 		double c = multiplicationCLT(fDx,n);
-		if( eAvalStatus  == AVAL_CLT_FAIL or eAvalStatus == AVAL_EXPLOSIVE_BEHAVIOR_CLT ) {
+		if( eAvalStatus == AVAL_CLT_FAIL or eAvalStatus == AVAL_EXPLOSIVE_BEHAVIOR_CLT ) {
 			/* CLT has failed to return an acceptable value. Try with classic multiplication */
-			cout << "clt failed" << endl;
+			cout << "clt failed: " << eAvalStatus << endl;
 			for(int i=0; i<n; i++){
 				s = fRngMult->RandU01();
 				if (s==1)	s = fRngMult->RandU01();
@@ -553,7 +553,7 @@ double TAvalanche1D::electronMultiplication(const double& n){
 	return nProduced;
 }
 
-double TAvalanche1D::multiplicationCLT(const double& x, const double& n){
+double TAvalanche1D::multiplicationCLT(const double& x, const double& n) {
 	double nm = n_moy(x);
 	double k = fEta[iCurrentDetectorStep]/fAlpha[iCurrentDetectorStep];
 	double alpha = fAlpha[iCurrentDetectorStep];
@@ -566,21 +566,29 @@ double TAvalanche1D::multiplicationCLT(const double& x, const double& n){
 	else	sigma = sqrt(n) * sqrt( ((1+k)/(1-k)) * nm * (nm-1) ); // alpha, eta > 0
 	
 	double c = Gaus(m, sigma, fRngCLT);
-	
+	// cout << "multiplicationCLT, c = " << c << endl;
+
 	if (c > 1e10) {
 		eAvalStatus = AVAL_EXPLOSIVE_BEHAVIOR_CLT;
+		cout << "aval_explosive_behaviour_clt, c = " << c << endl;
 		return 0;
 	}
-	
-	if (abs(c>1)) {
-		if( !(trunc(c)>0) )
+
+	// changed logic condition from : if (abs(c>1)) {
+	// to: if (abs(c) > 1) {
+	if (abs(c) > 1) {
+		if( !(trunc(c) > 0) ) {
 			eAvalStatus = AVAL_CLT_FAIL;
+			cout << "aval_clt_fail, !(trunc(c) > 0 , c = " << c << endl;
+		}
 		return trunc(c);
 	}
 	
 	else {
-		if ( !(round(c) >= 0) ) 
+		if ( !(round(c) >= 0) ) {
 			eAvalStatus = AVAL_CLT_FAIL;
+			cout << "aval_clt_fail, !(round(c) >= 0 , c = " << c << endl;
+		}
 		return round(c);
 	}
 }
@@ -876,9 +884,9 @@ void TAvalanche1D::testInterpolation() {
 	ofstream data("out/interp30.dat", ios::out | ios::trunc);
 	
 	//double z = 0.001;
-	double z = 0.8*0.001;
+	//double z = 0.8*0.001;
 	//double zp = 0.001;
-	double zp = 0.8*0.001;
+	//double zp = 0.8*0.001;
 	//double l;
 	
 	vector<double> l = linspace(0,0.14,200);

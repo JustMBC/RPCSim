@@ -60,8 +60,8 @@
 INCDIRGAR = $(GARFIELD_INSTALL)/include
 HEEDDIR = $(GARFIELD_HOME)/Heed
 GSLDIR = $(GSL_HOME)/lib
-#LIBDIR = $(GARFIELD_INSTALL)/lib64
-LIBDIR = $(HOME)/RPCSim/lib
+LIBDIR = $(GARFIELD_INSTALL)/lib64
+#LIBDIR = $(HOME)/RPCSim/lib
 DCLIB = $(DCMT_HOME)/lib
 
 MY_CFLAGS = `root-config --cflags` -fopenmp -Wall -Wno-unused-result -msse2 -DHAVE_SSE2 -I$(INCDIRGAR) -I$(HEEDDIR) -I$(GSLDIR)/include -I$(GARFIELD_INSTALL)/include/Garfield
@@ -78,7 +78,7 @@ CPPFLAGS  =
 
 # The options used in linking as well as in any direct use of ld.
 # REMOVED: -Wl,-rpath,/usera/mlc95/garfieldpp/install/lib64/ -Wl,-rpath-link,/usera/mlc95/garfieldpp/install/lib64/
-LDFLAGS   = -no-pie -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -L$(ROOTSYS)/lib -Wl,-rpath,$(LIBDIR) \
+LDFLAGS   = -no-pie -L$(DCLIB) -L$(LIBDIR) -L$(GSLDIR) -L$(ROOTSYS)/lib -Wl,-rpath,$(LIBDIR) -Wl,-rpath,$(ROOTSYS)/lib \
 			-L/cvmfs/sft.cern.ch/lcg/views/LCG_107a_ATLAS_2/x86_64-el9-gcc13-opt/lib \
 			-L/cvmfs/sft.cern.ch/lcg/views/LCG_107a_ATLAS_2/x86_64-el9-gcc13-opt/lib64 \
 			-Wl,-rpath,/cvmfs/sft.cern.ch/lcg/releases/gcc/13.1.0-b3d18/x86_64-el9/lib64 \
