@@ -1,6 +1,6 @@
 universe = vanilla  
 executable = sim_wrapper.sh
-arguments = "--config ./config/$(CONFIG_FILE)"
+arguments = "--config ./config/ATLAS_2024/$(CONFIG_FILE)"
 Requirements = (OpSysAndVer == "AlmaLinux9")
 
 Rank = kflops

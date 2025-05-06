@@ -1,0 +1,985 @@
+nohup: ignoring input
+Configuration:
+   Detector:
+	 gap width: 0.1
+	 steps: 500
+	 electric field: 54000
+	 ebar calculation steps: 140
+	 anode: 0.12 cm, epsilon=5
+	 cathode: 0.12 cm, epsilon=5
+	 threshold: 3 pC
+   Gas composition:
+	 temperature: 293.15
+	 pressure: 760
+	 gases: 4
+	 gas 0 -- name: c2h2f4 - percentage: 64
+	 gas 1 -- name: co2 - percentage: 30
+	 gas 2 -- name: isobutane - percentage: 5
+	 gas 3 -- name: sf6 - percentage: 1
+   Simulation parameters:
+	 particle: muon
+	 momentum: 5e+09
+	 x0: 0
+	 theta: 0
+	 events to simulate: 1
+	 threads to use: 1
+	 outfile path: out/test_ATLAS_2024_54kV.dat
+	 generator: SFMT
+	 random global seed
+	 Debug outputs: 1
+	 verbose: 1
+	 verbosity level: 1
+	 snapshots: 1
+Init SFMT generator with random seed: 3459123483
+MediumMagboltz::SetComposition: C2H2F4/CO2/iC4H10/SF6 (64/30/5/1)
+	Gas table file: C2H2F4-0.64_CO2-0.3_iC4H10-0.05_SF6-0.01_temp-293.15_pres-760.gas
+MediumMagboltz::LoadGasFile:
+    Reading file gastables/C2H2F4-0.64_CO2-0.3_iC4H10-0.05_SF6-0.01_temp-293.15_pres-760.gas.
+    Version 13.
+    Gas composition set to iC4H10/CO2/SF6/C2H2F4 (5/30/1/64).
+
+Transport parameters:
+	alpha: 238.155 cm-1
+	eta: 26.8089 cm-1
+	E: 54000 kV/cm
+	Drift velocity: (0.0128846,0,0) cm/ns
+	Ion Drift velocity: (0,0,0) cm/ns
+	Diffusion coefficient: (0.0103252, 0.0118378) cm-1/2
+	Dt: 0.0155224 ns
+
+EbarTable filename: fDiffT:0.0118378-gapWidth:0.1-eps1:5-eps3:5-cathode:0.12-anode:0.12-Nstep:500-Dx:0.0002-EbarTableSize:140
+Hash representation: 15092061468677048545
+Computing Ebar Table ... 
+
+TAvalanche::Computing cluster density.
+TAvalanche::Computing electron density and cluster size.
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 0) with Heed track (thread 0) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -204751921
+Cluster density for muon with momentum 5e+09 : 77.9916
+TAvalanche1D::initialiseTrackHeed -- 40 electrons produced by heed track.
+
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.39967e+07nm = -nan
+, alpha = 9760.17, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.39967e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 17275nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 17275
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 21490nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 21490
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 26395nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 26395
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 32150nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 32150
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 39844nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 39844
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 48139nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 48139
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 57950nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 57950
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 68569nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 68569
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 80704nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 80704
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 94940nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 94940
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 111654nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 111654
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 129873nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 129873
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 150049nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 150049
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 173100nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 173100
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 197576nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 197576
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 225275nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 225275
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 254557nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 254557
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 286849nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 286849
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 319325nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 319325
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 356262nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 356262
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 394576nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 394576
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 433212nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 433212
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 474384nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 474384
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 518824nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 518824
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 569323nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 569323
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 618694nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 618694
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 656878nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 656878
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 697980nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 697980
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 761874nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 761874
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 817510nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 817510
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 866354nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 866354
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 921796nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 921796
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 975248nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 975248
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.01778e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.01778e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.03762e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.03762e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.09247e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.09247e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.11222e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.11222e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.11042e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.11042e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.13438e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.13438e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.10218e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.10218e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.09585e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.09585e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.13281e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.13281e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.10529e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.10529e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 908564nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 908564
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 679063nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 679063
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 307994nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 307994
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 16482nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 16482
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 20656nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 20656
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 20823nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 20823
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 19143nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 19143
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 16509nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 16509
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 16292nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 16292
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 21976nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 21976
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 35753nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 35753
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 62426nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 62426
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 104585nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 104585
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 158323nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 158323
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 223292nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 223292
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 322500nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 322500
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 447677nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 447677
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 522384nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 522384
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 545879nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 545879
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 544024nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 544024
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 510647nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 510647
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 484505nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 484505
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 481906nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 481906
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 494382nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 494382
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 513883nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 513883
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 546022nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 546022
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 602681nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 602681
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 680893nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 680893
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 791152nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 791152
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 897437nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 897437
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 977934nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 977934
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.06794e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.06794e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.10261e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.10261e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.14375e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.14375e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.16257e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.16257e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.14915e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.14915e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.1634e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.1634e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.19997e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.19997e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.1753e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.1753e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.16392e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.16392e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.17104e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.17104e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.11717e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.11717e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.09665e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.09665e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.07894e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.07894e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.07556e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.07556e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.03191e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.03191e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 976391nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 976391
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 945146nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 945146
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 902876nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 902876
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 859268nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 859268
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 820587nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 820587
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 785145nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 785145
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 748109nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 748109
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 719318nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 719318
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 694420nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 694420
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 660203nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 660203
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 623372nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 623372
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 614367nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 614367
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 612444nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 612444
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 600959nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 600959
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 590885nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 590885
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 588726nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 588726
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 588361nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 588361
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 585898nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 585898
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 582589nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 582589
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 570809nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 570809
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 563150nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 563150
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 572757nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 572757
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 588199nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 588199
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 595714nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 595714
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 604760nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 604760
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 611317nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 611317
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 613253nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 613253
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 619149nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 619149
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 626664nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 626664
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 634162nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 634162
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 637609nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 637609
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 643753nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 643753
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 645595nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 645595
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 650119nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 650119
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 654569nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 654569
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 659343nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 659343
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 666541nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 666541
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 671255nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 671255
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 668181nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 668181
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 663348nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 663348
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 657137nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 657137
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 652726nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 652726
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 647060nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 647060
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 642223nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 642223
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 637340nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 637340
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 633671nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 633671
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 626497nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 626497
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 622278nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 622278
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 618416nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 618416
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 612330nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 612330
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 608083nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 608083
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 603883nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 603883
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 600449nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 600449
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 595133nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 595133
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 592110nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 592110
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 587390nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 587390
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 582045nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 582045
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 577603nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 577603
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 573146nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 573146
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 567383nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 567383
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 560220nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 560220
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 552863nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 552863
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 544323nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 544323
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 534407nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 534407
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 522686nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 522686
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 510563nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 510563
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 498478nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 498478
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 486709nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 486709
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 475272nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 475272
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 466338nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 466338
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 451937nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 451937
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 439723nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 439723
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 435346nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 435346
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 439911nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 439911
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 448097nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 448097
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 450790nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 450790
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 446669nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 446669
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 444681nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 444681
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 439632nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 439632
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 438690nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 438690
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 437756nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 437756
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 436592nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 436592
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 436555nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 436555
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 438990nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 438990
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 442647nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 442647
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 445497nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 445497
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 450639nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 450639
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 454476nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 454476
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 459336nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 459336
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 460407nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 460407
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 461369nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 461369
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 460478nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 460478
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 458707nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 458707
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 454697nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 454697
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 452883nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 452883
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 449265nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 449265
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 442843nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 442843
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 437917nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 437917
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 429056nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 429056
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 416312nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 416312
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 405884nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 405884
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 395534nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 395534
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 387155nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 387155
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 379925nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 379925
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 376282nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 376282
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 373154nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 373154
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 369194nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 369194
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 359309nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 359309
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 348008nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 348008
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 332174nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 332174
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 316416nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 316416
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 300356nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 300356
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 286546nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 286546
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 276946nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 276946
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 270333nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 270333
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 262880nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 262880
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 255205nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 255205
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 245550nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 245550
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 236644nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 236644
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 229253nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 229253
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 226282nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 226282
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 220008nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 220008
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 213527nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 213527
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 212627nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 212627
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 209870nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 209870
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 197160nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 197160
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 195693nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 195693
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 197004nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 197004
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 190220nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 190220
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 191008nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 191008
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 194292nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 194292
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 200653nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 200653
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 204254nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 204254
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 211170nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 211170
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 234250nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 234250
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 252692nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 252692
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 276477nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 276477
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 306546nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 306546
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 336296nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 336296
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 374260nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 374260
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 425440nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 425440
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 473945nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 473945
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 493359nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 493359
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 513228nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 513228
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 539931nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 539931
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 561422nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 561422
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 552526nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 552526
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 516395nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 516395
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 473764nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 473764
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 415564nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 415564
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 370431nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 370431
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 337942nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 337942
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 347973nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 347973
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 372917nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 372917
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 296993nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 296993
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 206850nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 206850
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 107998nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 107998
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 65400nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 65400
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 340242nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 340242
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 694032nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 694032
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 962875nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 962875
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.17371e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.17371e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.38905e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.38905e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.78835e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.78835e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 2.05535e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 2.05535e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 2.07671e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 2.07671e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.76263e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.76263e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.28803e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.28803e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.02285e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.02285e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 827290nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 827290
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 647965nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 647965
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 481401nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 481401
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 337985nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 337985
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 224118nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 224118
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 137539nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 137539
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 78182nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 78182
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 41935nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 41935
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 21984nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 21984
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 16308nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 16308
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 22337nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 22337
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 30207nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 30207
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 41035nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 41035
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 55169nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 55169
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 73414nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 73414
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 97092nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 97092
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 127326nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 127326
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 165713nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 165713
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 214998nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 214998
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 275634nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 275634
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 352282nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 352282
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 444923nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 444923
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 560943nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 560943
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 704570nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 704570
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 886509nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 886509
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.1155e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.1155e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.41299e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.41299e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.81948e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.81948e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 2.42538e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 2.42538e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 3.34614e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 3.34614e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 4.67492e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 4.67492e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 6.0115e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 6.0115e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 7.38825e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 7.38825e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 9.11998e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 9.11998e+06
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.1118e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.1118e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.33063e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.33063e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.54904e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.54904e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.73825e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.73825e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 2.01378e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 2.01378e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 2.83253e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 2.83253e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 3.22376e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 3.22376e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 2.71403e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 2.71403e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.97778e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.97778e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.38782e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.38782e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.20776e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.20776e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.11654e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.11654e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 1.04143e+07nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 1.04143e+07
+aval_clt_fail, !(round(c) >= 0 , c = -nan, x = 0.0002, n = 9.73588e+06nm = -nan
+, alpha = -nan, eta = -nan, sigma = -nan, fRngCLT = 0x7fdebc001820
+clt failed, aval_status = 2 , c = -nan , fDx = 0.0002 , n = 9.73588e+06
+
+2025-05-06.11:02:41 - Avalanche simulation id 0 (0nth simulation) terminated with success (1204 seconds).
+

@@ -32,3 +32,7 @@ the output file is a binary file with its name set in the config.xml file
 move it into the read directory and run:
 python readResultNew.py binaryOutputFile.bin csvOutputFile.csv
 to get a csv file with the outputs defined in readResultNew.py and TAvalanche1D.cpp
+
+
+
+ls config/AT24_40co2/*.xml | xargs -n1 basename > config/AT24_40co2/AT24_40co2_configs.txt

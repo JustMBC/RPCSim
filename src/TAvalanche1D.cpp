@@ -105,7 +105,7 @@ void TAvalanche1D::init() {
 	fStreamerThr = 4.85e8; // ~1e8 from [stocco], can instead use [francais] 4.85e8
 
 	bElecThrReached = false;	// alternative threshold set by number of electrons
-	fElecThr = 6241; // number of electrons corresponding to a charge of [Camarri 2025] 1-2fC, 6241-12483 electrons (or 3pC, 18724528)
+	fElecThr = 18724528; // number of electrons corresponding to a charge of [Camarri 2025] 1-2fC, 6241-12483 electrons (or 3pC, 18724528 elec)
 	iElecThrReachedTime = -1;
 	
 	fElecMax = 0;
@@ -530,15 +530,21 @@ double TAvalanche1D::electronMultiplication(const double& n){
 	
 	if(n > fThrCLT){
 		double c = multiplicationCLT(fDx,n);
-		if( eAvalStatus == AVAL_CLT_FAIL or eAvalStatus == AVAL_EXPLOSIVE_BEHAVIOR_CLT ) {
+
+		// check that the avalanche is stable
+		if(eAvalStatus == AVAL_EXPLOSIVE_BEHAVIOR_CLT) {
+			return 0;
+		}
+
+		if(eAvalStatus == AVAL_CLT_FAIL) {
 			/* CLT has failed to return an acceptable value. Try with classic multiplication */
-			cout << "clt failed: " << eAvalStatus << endl;
+			// cout << "clt failed, aval_status = " << eAvalStatus << " , c = " << c << " , fDx = " << fDx << " , n = " << n << endl;
 			for(int i=0; i<n; i++){
 				s = fRngMult->RandU01();
 				if (s==1)	s = fRngMult->RandU01();
 				nProduced += multiplicationRiegler(fDx,s);
 			}
-			if( eAvalStatus  == AVAL_CLT_FAIL or eAvalStatus == AVAL_EXPLOSIVE_BEHAVIOR_CLT )
+			if(eAvalStatus  == AVAL_CLT_FAIL)
 				eAvalStatus = AVAL_NO_ERROR;
 			return nProduced;
 		}
@@ -559,14 +565,21 @@ double TAvalanche1D::multiplicationCLT(const double& x, const double& n) {
 	double alpha = fAlpha[iCurrentDetectorStep];
 	double eta = fEta[iCurrentDetectorStep];
 	double m = n*nm;
-	
 	double sigma;
+
 	if (alpha == eta)	sigma = sqrt(n) * sqrt(2*alpha*x);
 	else if (alpha < 0.01)	sigma = sqrt(n) * sqrt( exp(-2*eta*x)*(exp(eta*x)-1) ); // alpha << 0
 	else	sigma = sqrt(n) * sqrt( ((1+k)/(1-k)) * nm * (nm-1) ); // alpha, eta > 0
 	
 	double c = Gaus(m, sigma, fRngCLT);
 	// cout << "multiplicationCLT, c = " << c << endl;
+
+	// check that c returns a reasonable value and that the simulation is stable
+	if (!isfinite(c)) {
+		eAvalStatus = AVAL_EXPLOSIVE_BEHAVIOR_CLT;
+		cout << "aval_explosive_behaviour_clt, c = " << c << endl;
+		return 0;
+	}
 
 	if (c > 1e10) {
 		eAvalStatus = AVAL_EXPLOSIVE_BEHAVIOR_CLT;
@@ -587,7 +600,8 @@ double TAvalanche1D::multiplicationCLT(const double& x, const double& n) {
 	else {
 		if ( !(round(c) >= 0) ) {
 			eAvalStatus = AVAL_CLT_FAIL;
-			cout << "aval_clt_fail, !(round(c) >= 0 , c = " << c << endl;
+			cout << "aval_clt_fail, !(round(c) >= 0 , c = " << c << ", x = " << x << ", n = " << n << ", nm = " << nm << endl;
+			cout << ", alpha = " << alpha << ", eta = " << eta << ", sigma = " << sigma << ", fRngCLT = " << fRngCLT << endl;
 		}
 		return round(c);
 	}
