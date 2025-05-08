@@ -20,6 +20,8 @@ class resultStruct(Structure):
                 ('ElecThr', c_double),
                 ('ElecThrReachedTime', c_int),
                 ('ElecMax', c_double),
+                ('InducedChargeThr', c_double),
+                ('InducedChargeThrTime', c_int),
                 ('ChargeMax', c_double)
 #                ('charges', c_double * 2000),
 #                ('chargesTot', c_double)
@@ -57,7 +59,8 @@ def save_to_csv(binary_file, csv_file):
         writer.writerow([
             "Dx", "Dt", "iNstep", "thrCrossTimeStep", "avalStatus", "computeTime", "streamer", "nCluster", 
             #"charges_size", "chargesTot_size", "signal_size", 
-            "size", "finalChargesTot", "ElecThr", "ElecThrReachedTime", "ElecMax", "ChargeMax"
+            "size", "finalChargesTot", "ElecThr", "ElecThrReachedTime", "ElecMax", "InducedChargeThr", 
+            "InducedChargeThrTime", "ChargeMax"
             #"charges", "chargesTot", "signal", "nions", "pions", "nelec", "clPos", "clNe"
         ])
         
@@ -83,6 +86,8 @@ def save_to_csv(binary_file, csv_file):
                 reader.result.ElecThr,
                 reader.result.ElecThrReachedTime,
                 reader.result.ElecMax,
+                reader.result.InducedChargeThr,
+                reader.result.InducedChargeThrTime,
                 reader.result.ChargeMax
 #                reader.result.charges,
 #                reader.result.chargesTot,

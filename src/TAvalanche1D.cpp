@@ -93,8 +93,8 @@ void TAvalanche1D::init() {
 	iVerbosityLevel = fConfig.verbosityLevel;	
 	
 	// sim until conditions:
-	bSimUntilStreamer = true;
-	bSimUntilThr = true;	// saves time but don't get to see end of simulation
+	bSimUntilStreamer = false;
+	bSimUntilThr = false;	// saves time but don't get to see end of simulation
 	bSimUntilElecThr = false;
 
 	fChargeThres = fConfig.threshold * 1.e-12;//100.e-15; //pC to Coulombs
@@ -102,12 +102,17 @@ void TAvalanche1D::init() {
 	bThrCrossTime = false;
 
 	bStreamer = false;
-	fStreamerThr = 4.85e8; // ~1e8 from [stocco], can instead use [francais] 4.85e8
+	fStreamerThr = 4.85e8; // ~1e8 from [stocco], can instead use [Francais 2017] 4.85e8
+	fStreamerFieldThr = 0.95; //Meek criterion [Stocco 2025]
 
 	bElecThrReached = false;	// alternative threshold set by number of electrons
 	fElecThr = 18724528; // number of electrons corresponding to a charge of [Camarri 2025] 1-2fC, 6241-12483 electrons (or 3pC, 18724528 elec)
 	iElecThrReachedTime = -1;
 	
+	bInducedChargeThrReached = false;
+	fInducedChargeThr = 1e-14;
+	iInducedChargeThrTime = -1;
+
 	fElecMax = 0;
 	fChargeMax = 0;
 
@@ -116,7 +121,7 @@ void TAvalanche1D::init() {
 	
 	fDebugOutputs = fConfig.debugOutput;
 	
-	fLongiDiffTimeLimit = 1400; // originally set to 1400
+	fLongiDiffTimeLimit = 1400;
 	
 	if ( bEbarComputed ) {
 		iEbarTableSize = fDet->getEbarTableSize();
@@ -319,6 +324,8 @@ void TAvalanche1D::makeResultFile() {
 	fResult.ElecThr = fElecThr;
 	fResult.ElecThrReachedTime = iElecThrReachedTime;
 	fResult.ElecMax = fElecMax;
+	fResult.InducedChargeThr = fInducedChargeThr;
+	fResult.InducedChargeThrTime = iInducedChargeThrTime;
 	fResult.ChargeMax = fChargeMax;
 
 	/*
@@ -433,7 +440,12 @@ void TAvalanche1D::computeInducedSignal2(){
 	
 	if (charges > fChargeMax) {
 		fChargeMax = charges;
+		if (!bInducedChargeThrReached and charges >= fInducedChargeThr) {
+			iInducedChargeThrTime = iTimeStep;
+			bInducedChargeThrReached = true;
+		}
 	}
+
 
 	fSignal.push_back(sig);
 	fCharges.push_back(charges);
@@ -782,15 +794,16 @@ bool TAvalanche1D::avalanche() {
 		//	cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
 		//	cout << "iTimeStep = " << iTimeStep << endl;		
 		}
-		
+
 		// save the number of electrons if it is the peak
 		if (fNElectrons[iTimeStep] > fElecMax) {
 			fElecMax = fNElectrons[iTimeStep];
 		}
 		
 		// check if the number of electrons exceeds the amount needed for a streamer
-		if (!bStreamer and fNElectrons[iTimeStep] >= fStreamerThr)
-			bStreamer = true;
+		// has been replaced by the Meek criterion see [Stocco 2025], condition implemented in computeSCEffect()
+		//if (!bStreamer and fNElectrons[iTimeStep] >= fStreamerThr)
+		//	bStreamer = true;
 
 		// stop simulation if we get a streamer as the number of electrons now grows rapidly, slowing the simulation to a halt
 		if (bStreamer and bSimUntilStreamer) {
@@ -862,6 +875,10 @@ void TAvalanche1D::computeSCEffect() {
 			tmp += (fElecOnAnode[i].first) * interpolateEbar((z)*fDx*Constants::cm, fGapWidth*Constants::cm, fElecOnAnode[i].second);
 			
 		SCEField[z] = tmp;
+		// streamer condidition based on Meek criterion
+		if (abs(tmp+fEini) >= ((1+fStreamerFieldThr)*fEini)) {
+			bStreamer = true;
+		}
 	}
 
 	for(int z=0; z<iNstep; z++){

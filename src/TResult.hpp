@@ -40,6 +40,8 @@ struct TResult
 	double ElecThr;
 	int ElecThrReachedTime;
 	double ElecMax;
+	double InducedChargeThr;
+	int InducedChargeThrTime;
 	double ChargeMax;
 /*	double charges[2000];
 	double chargesTot[2000];

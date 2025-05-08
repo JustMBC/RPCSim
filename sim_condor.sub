@@ -1,16 +1,16 @@
 universe = vanilla  
 executable = sim_wrapper.sh
-arguments = "--config ./config/ATLAS_2024.xml"
+arguments = "--config ./config/ATLAS_2024/ATLAS_2024_48kV.xml"
 Requirements = (OpSysAndVer == "AlmaLinux9")
 
 Rank = kflops
-request_cpus = 1
-request_memory = 4G
+request_cpus = 4
+request_memory = 6G
 request_disk = 4G
 
-output = out/test_ATLAS_2024_54kV.out
-error = out/test_ATLAS_2024_54kV.error
-log = out/test_ATLAS_2024_54kV.log
+output = out/ATLAS_2024_48kV.out
+error = out/ATLAS_2024_48kV.error
+log = out/ATLAS_2024_48kV.log
 
 getenv = true
 initialdir = /usera/mlc95/RPCSim/
