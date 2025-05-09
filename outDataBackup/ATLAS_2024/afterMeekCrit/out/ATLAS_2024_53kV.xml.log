@@ -1,0 +1,10 @@
+000 (55022.006.000) 2025-05-07 01:35:25 Job submitted from host: <[2a05:b400:104:100::500:82f]:19363?addrs=[2a05-b400-104-100--500-82f]-19363&alias=el9-06.hep.phy.cam.ac.uk>
+...
+022 (55022.006.000) 2025-05-07 19:14:34 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_1@wcdc-001.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc01]:45807?addrs=[2a05-b400-104-200--500-dc01]-45807&alias=wcdc-001.hep.phy.cam.ac.uk>
+...
+023 (55022.006.000) 2025-05-07 19:14:40 Job reconnected to slot1_1@wcdc-001.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc01]:45807?addrs=[2a05-b400-104-200--500-dc01]-45807&alias=wcdc-001.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc01]:44075?addrs=[2a05-b400-104-200--500-dc01]-44075&alias=wcdc-001.hep.phy.cam.ac.uk>
+...

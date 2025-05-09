@@ -92,9 +92,9 @@ void TAvalanche1D::init() {
 	bSnapshots = fConfig.snaps;
 	iVerbosityLevel = fConfig.verbosityLevel;	
 	
-	// sim until conditions:
+	// sim until conditions - saves time but don't get to see end of simulation
 	bSimUntilStreamer = false;
-	bSimUntilThr = false;	// saves time but don't get to see end of simulation
+	bSimUntilThr = false;
 	bSimUntilElecThr = false;
 
 	fChargeThres = fConfig.threshold * 1.e-12;//100.e-15; //pC to Coulombs
@@ -102,11 +102,11 @@ void TAvalanche1D::init() {
 	bThrCrossTime = false;
 
 	bStreamer = false;
-	fStreamerThr = 4.85e8; // ~1e8 from [stocco], can instead use [Francais 2017] 4.85e8
+	fStreamerThr = 4.85e8;
 	fStreamerFieldThr = 0.95; //Meek criterion [Stocco 2025]
 
 	bElecThrReached = false;	// alternative threshold set by number of electrons
-	fElecThr = 18724528; // number of electrons corresponding to a charge of [Camarri 2025] 1-2fC, 6241-12483 electrons (or 3pC, 18724528 elec)
+	fElecThr = 18724528; // number of electrons corresponding to a charge of 3pC (or can use [Camarri 2025] 1-2fC, 6241-12483 electrons?)
 	iElecThrReachedTime = -1;
 	
 	bInducedChargeThrReached = false;
@@ -876,6 +876,8 @@ void TAvalanche1D::computeSCEffect() {
 			
 		SCEField[z] = tmp;
 		// streamer condidition based on Meek criterion
+		// if (tmp >= fStreamerFieldThr*fEini) {
+		// using abs(tmp+fEini) allows it to also check for large negative fields
 		if (abs(tmp+fEini) >= ((1+fStreamerFieldThr)*fEini)) {
 			bStreamer = true;
 		}

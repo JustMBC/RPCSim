@@ -9,7 +9,7 @@
 			<width>0.12</width>
 			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>58000</ElectricField>
+    <ElectricField>35000</ElectricField>
     <Threshold>3</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -42,10 +42,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>6</Events>
-	<Threads>6</Threads>
+	<Events>1</Events>
+	<Threads>1</Threads>
 	
-	<OutFile>ATLAS_58kV.dat</OutFile>
+	<OutFile>ATLAS_noCO2_35kVkV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

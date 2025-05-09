@@ -1,0 +1,27 @@
+000 (298.001.000) 2025-05-09 00:28:44 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (298.001.000) 2025-05-09 00:28:44 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc23]:33645?addrs=[2a05-b400-104-200--500-dc23]-33645&alias=wcdc-035.hep.phy.cam.ac.uk>
+...
+040 (298.001.000) 2025-05-09 09:48:24 Finished transferring output files
+...
+005 (298.001.000) 2025-05-09 09:48:24 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 1 12:19:34, Sys 0 00:01:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 12:19:34, Sys 0 00:01:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	130375420  -  Run Bytes Sent By Job
+	634193118  -  Run Bytes Received By Job
+	130375420  -  Total Bytes Sent By Job
+	634193118  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        4         4 
+	   Disk (KB)            : 746819     4194304   4195328 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    291        6144      6144 
+	   TimeExecute (s)      :  33573                       
+	   TimeSlotBusy (s)     :  33580                       
+
+	Job terminated of its own accord at 2025-05-09T08:48:23Z with exit-code 0.
+...

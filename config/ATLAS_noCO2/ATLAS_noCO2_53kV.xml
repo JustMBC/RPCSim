@@ -42,7 +42,7 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>48</Events>
+	<Events>50</Events>
 	<Threads>4</Threads>
 	
 	<OutFile>ATLAS_noCO2_53kV.dat</OutFile>
