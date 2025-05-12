@@ -1,0 +1,15 @@
+000 (716.007.000) 2025-05-10 12:23:12 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (716.007.000) 2025-05-10 12:23:13 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200:225:90ff:fede:6c4e]:44603?addrs=[2a05-b400-104-200-225-90ff-fede-6c4e]-44603&alias=wcdc-016.hep.phy.cam.ac.uk>
+...
+040 (716.007.000) 2025-05-10 12:23:22 Finished transferring input files
+...
+001 (716.007.000) 2025-05-10 12:23:22 Job executing on host: <[2a05:b400:104:200:225:90ff:fede:6c4e]:34513?addrs=[2a05-b400-104-200-225-90ff-fede-6c4e]-34513&alias=wcdc-016.hep.phy.cam.ac.uk>
+	SlotName: slot1_4@wcdc-016.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_393249"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 6144
+...

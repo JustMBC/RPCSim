@@ -201,8 +201,14 @@ class TAvalanche1D : public TAvalanche {
 	int iInducedChargeThrTime;
 
 	bool bStreamer;
-	double fStreamerThr;
+	bool bClassicStreamer;
+	double fClassicStreamerThr;
 	double fStreamerFieldThr;
+
+	bool bSimUntilElecLimit;
+	bool bElecLimit;
+	double fElecLimit;
+
 	bool bSimUntilStreamer;
 	double fElecMax;
 	double fChargeMax;

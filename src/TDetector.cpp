@@ -199,7 +199,7 @@ Garfield::MediumMagboltz* TDetector::getGas(){
 void TDetector::makeGasTable(){
 	cout << "Generating gas table -- could take some time" << endl;
 	Garfield::MediumMagboltz* gas = mGas;
-	gas->SetFieldGrid(5000., 90000., 50, false, 0., 0., 1, 0., 0., 1);
+	gas->SetFieldGrid(5000., 120000., 80, false, 0., 0., 1, 0., 0., 1);
 	gas->EnableDebugging();
 	gas->Initialise();
 	gas->DisableDebugging();

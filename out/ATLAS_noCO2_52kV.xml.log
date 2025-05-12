@@ -1,2 +1,6 @@
 000 (298.005.000) 2025-05-09 00:28:44 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
 ...
+006 (298.005.000) 2025-05-10 01:26:35 Image size of job updated: 299256
+	293  -  MemoryUsage of job (MB)
+	299256  -  ResidentSetSize of job (KB)
+...

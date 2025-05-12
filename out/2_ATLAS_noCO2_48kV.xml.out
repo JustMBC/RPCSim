@@ -1,0 +1,503 @@
+Configuration:
+   Detector:
+	 gap width: 0.1
+	 steps: 500
+	 electric field: 48000
+	 ebar calculation steps: 140
+	 anode: 0.12 cm, epsilon=5
+	 cathode: 0.12 cm, epsilon=5
+	 threshold: 3 pC
+   Gas composition:
+	 temperature: 293.15
+	 pressure: 760
+	 gases: 3
+	 gas 0 -- name: c2h2f4 - percentage: 94.7
+	 gas 1 -- name: sf6 - percentage: 0.3
+	 gas 2 -- name: isobutane - percentage: 4.7
+   Simulation parameters:
+	 particle: muon
+	 momentum: 5e+09
+	 x0: 0
+	 theta: 0
+	 events to simulate: 50
+	 threads to use: 4
+	 outfile path: out/2_ATLAS_noCO2_48kV.dat
+	 generator: SFMT
+	 random global seed
+	 Debug outputs: 0
+	 verbose: 1
+	 verbosity level: 1
+	 snapshots: 0
+Init SFMT generator with random seed: 2214911766
+MediumMagboltz::SetComposition: C2H2F4/SF6/iC4H10 (94.985/0.300903/4.71414)
+	Gas table file: C2H2F4-0.94985_SF6-0.00300903_iC4H10-0.0471414_temp-293.15_pres-760.gas
+MediumMagboltz::LoadGasFile:
+    Reading file gastables/C2H2F4-0.94985_SF6-0.00300903_iC4H10-0.0471414_temp-293.15_pres-760.gas.
+    Version 13.
+MediumMagboltz::GetMixture:
+    Renormalizing the percentages.
+    Gas composition set to iC4H10/SF6/C2H2F4 (4.71414/0.300903/94.985).
+
+Transport parameters:
+	alpha: 134.535 cm-1
+	eta: 13.1976 cm-1
+	E: 48000 kV/cm
+	Drift velocity: (0.00996626,0,0) cm/ns
+	Ion Drift velocity: (0,0,0) cm/ns
+	Diffusion coefficient: (0.0100034, 0.0122858) cm-1/2
+	Dt: 0.0200677 ns
+
+EbarTable filename: fDiffT:0.0122858-gapWidth:0.1-eps1:5-eps3:5-cathode:0.12-anode:0.12-Nstep:500-Dx:0.0002-EbarTableSize:140
+Hash representation: 14299317560423372616
+TAvalanche::Computing cluster density.
+TAvalanche::Computing electron density and cluster size.
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 0) with Heed track (thread 0) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1930969613
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 10 electrons produced by heed track.
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 1) with Heed track (thread 1) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -316821248
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 14 electrons produced by heed track.
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 2) with Heed track (thread 2) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1862793954
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 14 electrons produced by heed track.
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 3) with Heed track (thread 3) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 664462539
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 23 electrons produced by heed track.
+
+
+2025-05-10.13:13:04 - Avalanche simulation id 0 (0nth simulation) terminated with success (2426 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 4) with Heed track (thread 4) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 175502288
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 4 electrons produced by heed track.
+
+
+2025-05-10.13:17:56 - Avalanche simulation id 4 (1nth simulation) terminated with success (291 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 5) with Heed track (thread 5) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1163893045
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 19 electrons produced by heed track.
+
+
+2025-05-10.13:50:39 - Avalanche simulation id 1 (2nth simulation) terminated with success (4667 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 6) with Heed track (thread 6) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 2105101974
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 35 electrons produced by heed track.
+
+
+2025-05-10.13:54:41 - Avalanche simulation id 2 (3nth simulation) terminated with success (4902 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 7) with Heed track (thread 7) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1658875451
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 12 electrons produced by heed track.
+
+
+2025-05-10.14:15:32 - Avalanche simulation id 6 (4nth simulation) terminated with success (1493 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 8) with Heed track (thread 8) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 635931203
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 8 electrons produced by heed track.
+
+
+2025-05-10.14:51:10 - Avalanche simulation id 3 (5nth simulation) terminated with success (8268 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 9) with Heed track (thread 9) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -24191609
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 21 electrons produced by heed track.
+
+
+2025-05-10.14:58:36 - Avalanche simulation id 5 (6nth simulation) terminated with success (6039 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 10) with Heed track (thread 10) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -863096353
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 36 electrons produced by heed track.
+
+
+2025-05-10.15:20:40 - Avalanche simulation id 7 (7nth simulation) terminated with success (5158 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 11) with Heed track (thread 11) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 663663490
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 10 electrons produced by heed track.
+
+
+2025-05-10.15:32:24 - Avalanche simulation id 8 (8nth simulation) terminated with success (4612 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 12) with Heed track (thread 12) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1919012420
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 54 electrons produced by heed track.
+
+
+2025-05-10.15:59:34 - Avalanche simulation id 12 (9nth simulation) terminated with success (1629 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 13) with Heed track (thread 13) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 664009730
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 7 electrons produced by heed track.
+
+
+2025-05-10.16:02:00 - Avalanche simulation id 11 (10nth simulation) terminated with success (2480 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 14) with Heed track (thread 14) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1649454118
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 7 electrons produced by heed track.
+
+
+2025-05-10.16:09:55 - Avalanche simulation id 10 (11nth simulation) terminated with success (4278 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 15) with Heed track (thread 15) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -471123686
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 7 electrons produced by heed track.
+
+
+2025-05-10.16:16:18 - Avalanche simulation id 9 (12nth simulation) terminated with success (5108 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 16) with Heed track (thread 16) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1661240458
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 16 electrons produced by heed track.
+
+
+2025-05-10.16:28:13 - Avalanche simulation id 14 (13nth simulation) terminated with success (1573 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 17) with Heed track (thread 17) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -166784732
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 41 electrons produced by heed track.
+
+
+2025-05-10.16:57:07 - Avalanche simulation id 15 (14nth simulation) terminated with success (2832 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 18) with Heed track (thread 18) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 738621940
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 23 electrons produced by heed track.
+
+
+2025-05-10.17:11:37 - Avalanche simulation id 13 (15nth simulation) terminated with success (4322 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 19) with Heed track (thread 19) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -413262840
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 7 electrons produced by heed track.
+
+
+2025-05-10.17:23:54 - Avalanche simulation id 18 (16nth simulation) terminated with success (1607 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 20) with Heed track (thread 20) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1530391856
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 14 electrons produced by heed track.
+
+
+2025-05-10.17:26:03 - Avalanche simulation id 16 (17nth simulation) terminated with success (4184 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 21) with Heed track (thread 21) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 274673535
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 9 electrons produced by heed track.
+
+
+2025-05-10.18:19:46 - Avalanche simulation id 19 (18nth simulation) terminated with success (4089 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 22) with Heed track (thread 22) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -726908428
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 8 electrons produced by heed track.
+
+
+2025-05-10.18:25:39 - Avalanche simulation id 17 (19nth simulation) terminated with success (7045 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 23) with Heed track (thread 23) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -738389066
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 18 electrons produced by heed track.
+
+
+2025-05-10.18:36:17 - Avalanche simulation id 20 (20nth simulation) terminated with success (4342 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 24) with Heed track (thread 24) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -2036796094
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 16 electrons produced by heed track.
+
+
+2025-05-10.18:41:09 - Avalanche simulation id 21 (21nth simulation) terminated with success (4506 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 25) with Heed track (thread 25) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1297891688
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 15 electrons produced by heed track.
+
+
+2025-05-10.19:01:40 - Avalanche simulation id 22 (22nth simulation) terminated with success (2514 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 26) with Heed track (thread 26) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 231104833
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 13 electrons produced by heed track.
+
+
+2025-05-10.19:21:48 - Avalanche simulation id 24 (23nth simulation) terminated with success (2731 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 27) with Heed track (thread 27) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1899408878
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 15 electrons produced by heed track.
+
+
+2025-05-10.19:31:54 - Avalanche simulation id 26 (24nth simulation) terminated with success (1813 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 28) with Heed track (thread 28) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1943306540
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 15 electrons produced by heed track.
+
+
+2025-05-10.19:56:17 - Avalanche simulation id 25 (25nth simulation) terminated with success (4508 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 29) with Heed track (thread 29) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -880511570
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 20 electrons produced by heed track.
+
+
+2025-05-10.20:01:14 - Avalanche simulation id 23 (26nth simulation) terminated with success (5735 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 30) with Heed track (thread 30) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1967553769
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 12 electrons produced by heed track.
+
+
+2025-05-10.20:39:55 - Avalanche simulation id 27 (27nth simulation) terminated with success (4686 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 31) with Heed track (thread 31) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -191697303
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 14 electrons produced by heed track.
+
+
+2025-05-10.21:00:03 - Avalanche simulation id 28 (28nth simulation) terminated with success (5289 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 32) with Heed track (thread 32) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 274615194
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 9 electrons produced by heed track.
+
+
+2025-05-10.21:00:09 - Avalanche simulation id 30 (29nth simulation) terminated with success (3535 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 33) with Heed track (thread 33) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 790992464
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 7 electrons produced by heed track.
+
+
+2025-05-10.21:10:06 - Avalanche simulation id 29 (30nth simulation) terminated with success (4428 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 34) with Heed track (thread 34) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 47985635
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 10 electrons produced by heed track.
+
+
+2025-05-10.21:14:15 - Avalanche simulation id 31 (31nth simulation) terminated with success (2059 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 35) with Heed track (thread 35) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -2042894882
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 12 electrons produced by heed track.
+
+
+2025-05-10.21:45:21 - Avalanche simulation id 34 (32nth simulation) terminated with success (2114 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 36) with Heed track (thread 36) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 995994060
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 13 electrons produced by heed track.
+
+
+2025-05-10.21:55:35 - Avalanche simulation id 35 (33nth simulation) terminated with success (2480 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 37) with Heed track (thread 37) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -179243168
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 22 electrons produced by heed track.
+
+
+2025-05-10.22:08:36 - Avalanche simulation id 37 (34nth simulation) terminated with success (780 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 38) with Heed track (thread 38) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1280915482
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 20 electrons produced by heed track.
+
+
+2025-05-10.22:16:36 - Avalanche simulation id 32 (35nth simulation) terminated with success (4592 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 39) with Heed track (thread 39) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1800508911
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 28 electrons produced by heed track.
+
+
+2025-05-10.22:21:54 - Avalanche simulation id 33 (36nth simulation) terminated with success (4905 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 40) with Heed track (thread 40) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -558829456
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 12 electrons produced by heed track.
+
+
+2025-05-10.22:55:46 - Avalanche simulation id 40 (37nth simulation) terminated with success (2032 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 41) with Heed track (thread 41) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1918016377
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 13 electrons produced by heed track.
+
+
+2025-05-10.22:57:07 - Avalanche simulation id 36 (38nth simulation) terminated with success (4306 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 42) with Heed track (thread 42) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 1247796545
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 11 electrons produced by heed track.
+
+
+2025-05-10.23:13:54 - Avalanche simulation id 39 (39nth simulation) terminated with success (3438 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 43) with Heed track (thread 43) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -382290754
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 5 electrons produced by heed track.
+
+
+2025-05-10.23:17:08 - Avalanche simulation id 38 (40nth simulation) terminated with success (4111 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 44) with Heed track (thread 44) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 33482508
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 7 electrons produced by heed track.
+
+
+2025-05-10.23:49:29 - Avalanche simulation id 41 (41nth simulation) terminated with success (3222 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 45) with Heed track (thread 45) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1787641462
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 11 electrons produced by heed track.
+
+
+2025-05-10.23:57:49 - Avalanche simulation id 44 (42nth simulation) terminated with success (2441 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 46) with Heed track (thread 46) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1631045410
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 4 electrons produced by heed track.
+
+
+2025-05-11.00:13:13 - Avalanche simulation id 43 (43nth simulation) terminated with success (3558 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 47) with Heed track (thread 47) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -4811369
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 21 electrons produced by heed track.
+
+
+2025-05-11.00:18:19 - Avalanche simulation id 46 (44nth simulation) terminated with success (1229 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 48) with Heed track (thread 48) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: 553855096
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 12 electrons produced by heed track.
+
+
+2025-05-11.00:23:33 - Avalanche simulation id 42 (45nth simulation) terminated with success (5186 seconds).
+
+Longitudinal diffusion generator: SIMD-oriented Fast Mersenne Twister
+Initialising avalanche (Id: 49) with Heed track (thread 49) for muon with momentum 5e+09 at position 0 with angle 0
+Garfield::RandomEngineSTL seed: -1959487533
+Cluster density for muon with momentum 5e+09 : 92.1483
+TAvalanche1D::initialiseTrackHeed -- 5 electrons produced by heed track.
+
+
+2025-05-11.00:35:41 - Avalanche simulation id 49 (46nth simulation) terminated with success (727 seconds).
+
+
+2025-05-11.00:45:01 - Avalanche simulation id 47 (47nth simulation) terminated with success (1908 seconds).
+
+
+2025-05-11.01:02:52 - Avalanche simulation id 45 (48nth simulation) terminated with success (4402 seconds).
+
+
+2025-05-11.01:03:21 - Avalanche simulation id 48 (49nth simulation) terminated with success (2701 seconds).
+

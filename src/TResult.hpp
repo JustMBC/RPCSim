@@ -34,6 +34,8 @@ struct TResult
 	int avalStatus;
 	double computeTime;
 	int streamer;
+	int classicStreamer;
+	int elecLimit;
 	int nCluster;
 	uint size;
 	double finalChargesTot;

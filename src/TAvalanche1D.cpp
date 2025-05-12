@@ -96,15 +96,20 @@ void TAvalanche1D::init() {
 	bSimUntilStreamer = false;
 	bSimUntilThr = false;
 	bSimUntilElecThr = false;
+	bSimUntilElecLimit = true;
 
 	fChargeThres = fConfig.threshold * 1.e-12;//100.e-15; //pC to Coulombs
 	iThrCrossTimeStep = -1;
 	bThrCrossTime = false;
 
 	bStreamer = false;
-	fStreamerThr = 4.85e8;
+	bClassicStreamer = false;
+	fClassicStreamerThr = 4.85e8;
 	fStreamerFieldThr = 0.95; //Meek criterion [Stocco 2025]
 
+	bElecLimit = false;
+	fElecLimit = 1.e9; //limit at which the simulation terminates
+	
 	bElecThrReached = false;	// alternative threshold set by number of electrons
 	fElecThr = 18724528; // number of electrons corresponding to a charge of 3pC (or can use [Camarri 2025] 1-2fC, 6241-12483 electrons?)
 	iElecThrReachedTime = -1;
@@ -315,6 +320,8 @@ void TAvalanche1D::makeResultFile() {
 	fResult.avalStatus = eAvalStatus;
 	fResult.computeTime = fElapsed;
 	fResult.streamer = bStreamer;
+	fResult.classicStreamer = bClassicStreamer;
+	fResult.elecLimit = bElecLimit;
 	fResult.nCluster = fClustersX.size();
 	/*fResult.charges_size = fCharges.size();
 	fResult.chargesTot_size = fTotalCharges.size();
@@ -786,7 +793,7 @@ bool TAvalanche1D::avalanche() {
 			}
 		}*/
 		
-		// check if number of electrons exeeds set limit
+		// check if number of electrons exeeds set threshold
 		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr) {
 			iElecThrReachedTime = iTimeStep;
 			bElecThrReached = true;
@@ -802,9 +809,17 @@ bool TAvalanche1D::avalanche() {
 		
 		// check if the number of electrons exceeds the amount needed for a streamer
 		// has been replaced by the Meek criterion see [Stocco 2025], condition implemented in computeSCEffect()
-		//if (!bStreamer and fNElectrons[iTimeStep] >= fStreamerThr)
-		//	bStreamer = true;
+		if (!bClassicStreamer and fNElectrons[iTimeStep] >= fClassicStreamerThr)
+			bClassicStreamer = true;
 
+		if (!bElecLimit and fNElectrons[iTimeStep] >= fElecLimit) {
+			bElecLimit = true;
+			if (bElecLimit and bSimUntilElecLimit) {
+				computeInducedSignal2();
+				break;
+			}
+		}
+		
 		// stop simulation if we get a streamer as the number of electrons now grows rapidly, slowing the simulation to a halt
 		if (bStreamer and bSimUntilStreamer) {
 			computeInducedSignal2();

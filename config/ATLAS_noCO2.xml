@@ -25,14 +25,14 @@
 	</gas>
 	<gas>
 		<name>isobutane</name>
-		<percentage>4.7</percentage>
+		<percentage>5</percentage>
 	</gas>
 	<temperature>293.15</temperature>
 	<pressure>760.</pressure>
 </Gas>
 
 <Simulation>
-	<NoAvalanche>0</NoAvalanche>
+	<NoAvalanche>1</NoAvalanche>
 	<OnlyMultiplication>0</OnlyMultiplication>
 	
 	<Particle>
@@ -45,7 +45,7 @@
 	<Events>1</Events>
 	<Threads>1</Threads>
 	
-	<OutFile>ATLAS_noCO2_35kVkV.dat</OutFile>
+	<OutFile>gastable_ATLAS_noCO2.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
