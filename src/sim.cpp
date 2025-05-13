@@ -188,7 +188,7 @@ int main(int argc, const char** argv) {
 	
 	/* Functions to produce data on primary inisation */
 	TAvalanche::computeClusterDensity(detector,"muon",6e7,1.5e10,600);
-	TAvalanche::computeElectronsProduction(detector,"muon",5.e9,60000);
+	TAvalanche::computeElectronsProduction(detector,config.particleName,config.particleMomentum,60000);
 	
 	/* Here we define a Magboltz Gas in order to print its photo-absorption CS through HEED */
 	//MediumMagboltz* gas = new MediumMagboltz();

@@ -1,0 +1,51 @@
+000 (1166.005.000) 2025-05-13 11:21:46 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (1166.005.000) 2025-05-13 11:22:46 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::dc00:3]:38221?addrs=[2a05-b400-104-200--dc00-3]-38221&alias=dc-cpu-03.hep.phy.cam.ac.uk>
+...
+040 (1166.005.000) 2025-05-13 11:22:50 Finished transferring input files
+...
+001 (1166.005.000) 2025-05-13 11:22:50 Job executing on host: <[2a05:b400:104:200::dc00:3]:44735?addrs=[2a05-b400-104-200--dc00-3]-44735&alias=dc-cpu-03.hep.phy.cam.ac.uk>
+	SlotName: slot1_59@dc-cpu-03.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_476605"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 6144
+...
+006 (1166.005.000) 2025-05-13 11:22:58 Image size of job updated: 111304
+	109  -  MemoryUsage of job (MB)
+	111304  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 11:27:58 Image size of job updated: 451352
+	441  -  MemoryUsage of job (MB)
+	451352  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 12:03:03 Image size of job updated: 452448
+	442  -  MemoryUsage of job (MB)
+	452448  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 12:08:04 Image size of job updated: 452476
+	442  -  MemoryUsage of job (MB)
+	452476  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 12:23:05 Image size of job updated: 454032
+	444  -  MemoryUsage of job (MB)
+	454032  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 12:33:05 Image size of job updated: 474452
+	464  -  MemoryUsage of job (MB)
+	474452  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 12:38:06 Image size of job updated: 475996
+	465  -  MemoryUsage of job (MB)
+	475996  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 13:03:07 Image size of job updated: 476004
+	465  -  MemoryUsage of job (MB)
+	476004  -  ResidentSetSize of job (KB)
+...
+006 (1166.005.000) 2025-05-13 13:28:11 Image size of job updated: 477480
+	467  -  MemoryUsage of job (MB)
+	477480  -  ResidentSetSize of job (KB)
+...

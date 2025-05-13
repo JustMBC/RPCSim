@@ -9,7 +9,7 @@
 			<width>0.12</width>
 			<permittivity>5</permittivity>
     </Cathode>
-    <ElectricField>35000</ElectricField>
+    <ElectricField>56000</ElectricField>
     <Threshold>3</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
@@ -45,7 +45,7 @@
 	<Events>1</Events>
 	<Threads>1</Threads>
 	
-	<OutFile>gastable_ATLAS_noCO2.dat</OutFile>
+	<OutFile>energydep_ATLAS_noCO2.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

@@ -1,0 +1,35 @@
+universe = vanilla  
+executable = sim_wrapper.sh
+arguments = "--config ./config/ATLAS_noCO2_steps200/$(CONFIG_FILE)"
+Requirements = (OpSysAndVer == "AlmaLinux9")
+
+Rank = kflops
+request_cpus = 4
+request_memory = 6G
+request_disk = 4G
+
+output = out/steps200_$(CONFIG_FILE).out
+error = out/steps200_$(CONFIG_FILE).error
+log = out/steps200_$(CONFIG_FILE).log
+
+getenv = true
+initialdir = /usera/mlc95/RPCSim/
+copy_to_spool = true
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+transfer_input_files = sim , ./config , ./gastables , ./EbarTables , ./out
+transfer_output_files = out
+
+queue CONFIG_FILE from (
+  ATLAS_noCO2_47kV.xml
+  ATLAS_noCO2_48kV.xml
+  ATLAS_noCO2_49kV.xml
+  ATLAS_noCO2_50kV.xml
+  ATLAS_noCO2_51kV.xml
+  ATLAS_noCO2_52kV.xml
+  ATLAS_noCO2_53kV.xml
+  ATLAS_noCO2_54kV.xml
+  ATLAS_noCO2_55kV.xml
+  ATLAS_noCO2_56kV.xml
+  ATLAS_noCO2_57kV.xml
+)

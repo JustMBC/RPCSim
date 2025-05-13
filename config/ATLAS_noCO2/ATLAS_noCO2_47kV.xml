@@ -43,7 +43,7 @@
 	</Particle>
 	
 	<Events>50</Events>
-	<Threads>4</Threads>
+	<Threads>8</Threads>
 	
 	<OutFile>2_ATLAS_noCO2_47kV.dat</OutFile>
 	
