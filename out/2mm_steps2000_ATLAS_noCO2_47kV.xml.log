@@ -1,0 +1,59 @@
+000 (1309.007.000) 2025-05-14 11:18:54 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (1309.007.000) 2025-05-14 11:19:22 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc23]:43437?addrs=[2a05-b400-104-200--500-dc23]-43437&alias=wcdc-035.hep.phy.cam.ac.uk>
+...
+040 (1309.007.000) 2025-05-14 11:23:15 Finished transferring input files
+...
+001 (1309.007.000) 2025-05-14 11:23:15 Job executing on host: <[2a05:b400:104:200::500:dc23]:43755?addrs=[2a05-b400-104-200--500-dc23]-43755&alias=wcdc-035.hep.phy.cam.ac.uk>
+	SlotName: slot1_15@wcdc-035.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_1109716"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (1309.007.000) 2025-05-14 11:23:29 Image size of job updated: 52
+	1  -  MemoryUsage of job (MB)
+	52  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 11:38:30 Image size of job updated: 12740
+	10  -  MemoryUsage of job (MB)
+	9488  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 11:43:30 Image size of job updated: 37868
+	37  -  MemoryUsage of job (MB)
+	37868  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 11:48:31 Image size of job updated: 45160
+	45  -  MemoryUsage of job (MB)
+	45160  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 11:58:31 Image size of job updated: 113564
+	111  -  MemoryUsage of job (MB)
+	113564  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 12:03:32 Image size of job updated: 446092
+	436  -  MemoryUsage of job (MB)
+	446092  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 12:08:32 Image size of job updated: 446096
+	436  -  MemoryUsage of job (MB)
+	446096  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 12:23:33 Image size of job updated: 446100
+	436  -  MemoryUsage of job (MB)
+	446100  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-14 13:23:37 Image size of job updated: 446104
+	436  -  MemoryUsage of job (MB)
+	446104  -  ResidentSetSize of job (KB)
+...
+022 (1309.007.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_15@wcdc-035.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc23]:43755?addrs=[2a05-b400-104-200--500-dc23]-43755&alias=wcdc-035.hep.phy.cam.ac.uk>
+...
+023 (1309.007.000) 2025-05-14 18:07:17 Job reconnected to slot1_15@wcdc-035.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc23]:43755?addrs=[2a05-b400-104-200--500-dc23]-43755&alias=wcdc-035.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc23]:43437?addrs=[2a05-b400-104-200--500-dc23]-43437&alias=wcdc-035.hep.phy.cam.ac.uk>
+...

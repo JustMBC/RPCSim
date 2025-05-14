@@ -1,0 +1,39 @@
+000 (1309.000.000) 2025-05-14 11:18:54 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (1309.000.000) 2025-05-14 11:19:05 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200:d294:66ff:fe0f:2e41]:34827?addrs=[2a05-b400-104-200-d294-66ff-fe0f-2e41]-34827&alias=wcdc-005.hep.phy.cam.ac.uk>
+...
+040 (1309.000.000) 2025-05-14 11:19:12 Finished transferring input files
+...
+001 (1309.000.000) 2025-05-14 11:19:12 Job executing on host: <[2a05:b400:104:200:d294:66ff:fe0f:2e41]:39501?addrs=[2a05-b400-104-200-d294-66ff-fe0f-2e41]-39501&alias=wcdc-005.hep.phy.cam.ac.uk>
+	SlotName: slot1_14@wcdc-005.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_2529655"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (1309.000.000) 2025-05-14 11:19:20 Image size of job updated: 11168
+	11  -  MemoryUsage of job (MB)
+	11168  -  ResidentSetSize of job (KB)
+...
+006 (1309.000.000) 2025-05-14 11:24:20 Image size of job updated: 449732
+	440  -  MemoryUsage of job (MB)
+	449732  -  ResidentSetSize of job (KB)
+...
+006 (1309.000.000) 2025-05-14 11:29:21 Image size of job updated: 449740
+	440  -  MemoryUsage of job (MB)
+	449740  -  ResidentSetSize of job (KB)
+...
+006 (1309.000.000) 2025-05-14 11:59:23 Image size of job updated: 449744
+	440  -  MemoryUsage of job (MB)
+	449744  -  ResidentSetSize of job (KB)
+...
+022 (1309.000.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_14@wcdc-005.hep.phy.cam.ac.uk <[2a05:b400:104:200:d294:66ff:fe0f:2e41]:39501?addrs=[2a05-b400-104-200-d294-66ff-fe0f-2e41]-39501&alias=wcdc-005.hep.phy.cam.ac.uk>
+...
+023 (1309.000.000) 2025-05-14 18:07:17 Job reconnected to slot1_14@wcdc-005.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200:d294:66ff:fe0f:2e41]:39501?addrs=[2a05-b400-104-200-d294-66ff-fe0f-2e41]-39501&alias=wcdc-005.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200:d294:66ff:fe0f:2e41]:34827?addrs=[2a05-b400-104-200-d294-66ff-fe0f-2e41]-34827&alias=wcdc-005.hep.phy.cam.ac.uk>
+...

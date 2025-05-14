@@ -1,2 +1,0 @@
-Dx,Dt,iNstep,thrCrossTimeStep,avalStatus,computeTime,streamer,nCluster,size,finalChargesTot,ElecThr,ElecThrReachedTime,ElecMax,ChargeMax
-0.0002,0.017077172796979297,500,261,4,603.0,1,13,325,1.8473760579954425e-12,18724528.0,257,2711002727.0,5.869601115394975e-13

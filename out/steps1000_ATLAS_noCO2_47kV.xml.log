@@ -29,3 +29,47 @@
 	435  -  MemoryUsage of job (MB)
 	444968  -  ResidentSetSize of job (KB)
 ...
+006 (1307.000.000) 2025-05-14 11:13:02 Image size of job updated: 444996
+	435  -  MemoryUsage of job (MB)
+	444996  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 11:48:05 Image size of job updated: 466852
+	456  -  MemoryUsage of job (MB)
+	466852  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 13:03:11 Image size of job updated: 466856
+	456  -  MemoryUsage of job (MB)
+	466856  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 13:23:13 Image size of job updated: 468388
+	458  -  MemoryUsage of job (MB)
+	468388  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 13:33:14 Image size of job updated: 468396
+	458  -  MemoryUsage of job (MB)
+	468396  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 14:13:18 Image size of job updated: 468400
+	458  -  MemoryUsage of job (MB)
+	468400  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 14:48:22 Image size of job updated: 469928
+	459  -  MemoryUsage of job (MB)
+	469928  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 16:33:32 Image size of job updated: 471472
+	461  -  MemoryUsage of job (MB)
+	471472  -  ResidentSetSize of job (KB)
+...
+006 (1307.000.000) 2025-05-14 17:03:35 Image size of job updated: 472064
+	461  -  MemoryUsage of job (MB)
+	472064  -  ResidentSetSize of job (KB)
+...
+022 (1307.000.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_13@wcdc-132.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc84]:33677?addrs=[2a05-b400-104-200--500-dc84]-33677&alias=wcdc-132.hep.phy.cam.ac.uk>
+...
+023 (1307.000.000) 2025-05-14 18:07:17 Job reconnected to slot1_13@wcdc-132.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc84]:33677?addrs=[2a05-b400-104-200--500-dc84]-33677&alias=wcdc-132.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc84]:42303?addrs=[2a05-b400-104-200--500-dc84]-42303&alias=wcdc-132.hep.phy.cam.ac.uk>
+...

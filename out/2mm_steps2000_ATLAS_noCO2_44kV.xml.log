@@ -1,0 +1,86 @@
+000 (1309.004.000) 2025-05-14 11:18:54 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (1309.004.000) 2025-05-14 11:19:07 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200:21e:67ff:fefe:924c]:35565?addrs=[2a05-b400-104-200-21e-67ff-fefe-924c]-35565&alias=wcdc-007.hep.phy.cam.ac.uk>
+...
+040 (1309.004.000) 2025-05-14 11:19:24 Finished transferring input files
+...
+001 (1309.004.000) 2025-05-14 11:19:24 Job executing on host: <[2a05:b400:104:200:21e:67ff:fefe:924c]:43555?addrs=[2a05-b400-104-200-21e-67ff-fefe-924c]-43555&alias=wcdc-007.hep.phy.cam.ac.uk>
+	SlotName: slot1_1@wcdc-007.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_2599871"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (1309.004.000) 2025-05-14 11:19:32 Image size of job updated: 56
+	1  -  MemoryUsage of job (MB)
+	56  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 11:24:32 Image size of job updated: 45172
+	45  -  MemoryUsage of job (MB)
+	45164  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 11:29:33 Image size of job updated: 113648
+	111  -  MemoryUsage of job (MB)
+	113648  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 11:34:33 Image size of job updated: 446144
+	436  -  MemoryUsage of job (MB)
+	446144  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 11:39:33 Image size of job updated: 446152
+	436  -  MemoryUsage of job (MB)
+	446152  -  ResidentSetSize of job (KB)
+...
+022 (1309.004.000) 2025-05-14 13:54:52 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@wcdc-007.hep.phy.cam.ac.uk <[2a05:b400:104:200:21e:67ff:fefe:924c]:43555?addrs=[2a05-b400-104-200-21e-67ff-fefe-924c]-43555&alias=wcdc-007.hep.phy.cam.ac.uk>
+...
+024 (1309.004.000) 2025-05-14 13:54:52 Job reconnection failed
+    Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+    Can not reconnect to slot1_1@wcdc-007.hep.phy.cam.ac.uk, rescheduling job
+...
+004 (1309.004.000) 2025-05-14 13:55:02 Job was evicted. Code 1008 Subcode 0
+	(0) CPU times
+		Usr 0 04:05:07, Sys 0 00:02:14  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	634447495  -  Run Bytes Received By Job
+	Reason: Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.01        4         4 
+	   Disk (KB)            : 654549     4194304   4195328 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    436        4096      4096 
+...
+040 (1309.004.000) 2025-05-14 18:07:06 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc86]:32811?addrs=[2a05-b400-104-200--500-dc86]-32811&alias=wcdc-134.hep.phy.cam.ac.uk>
+...
+022 (1309.004.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_4@wcdc-134.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc86]:36313?addrs=[2a05-b400-104-200--500-dc86]-36313&alias=wcdc-134.hep.phy.cam.ac.uk>
+...
+024 (1309.004.000) 2025-05-14 18:07:17 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_4@wcdc-134.hep.phy.cam.ac.uk, rescheduling job
+...
+040 (1309.004.000) 2025-05-14 18:13:10 Entered queue to transfer input files
+	Transferring to host: <[2a05:b400:104:200:21e:67ff:fefe:942c]:39485?addrs=[2a05-b400-104-200-21e-67ff-fefe-942c]-39485&alias=wcdc-013.hep.phy.cam.ac.uk>
+...
+006 (1309.004.000) 2025-05-14 18:23:42 Image size of job updated: 450112
+	440  -  MemoryUsage of job (MB)
+	450112  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 18:33:43 Image size of job updated: 450116
+	440  -  MemoryUsage of job (MB)
+	450116  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 18:43:43 Image size of job updated: 450120
+	440  -  MemoryUsage of job (MB)
+	450120  -  ResidentSetSize of job (KB)
+...
+006 (1309.004.000) 2025-05-14 19:48:49 Image size of job updated: 450160
+	440  -  MemoryUsage of job (MB)
+	450160  -  ResidentSetSize of job (KB)
+...

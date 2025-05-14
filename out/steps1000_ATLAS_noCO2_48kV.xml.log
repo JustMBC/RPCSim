@@ -37,3 +37,55 @@
 	439  -  MemoryUsage of job (MB)
 	449372  -  ResidentSetSize of job (KB)
 ...
+006 (1307.001.000) 2025-05-14 11:29:37 Image size of job updated: 450908
+	441  -  MemoryUsage of job (MB)
+	450908  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 12:09:40 Image size of job updated: 451020
+	441  -  MemoryUsage of job (MB)
+	451020  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 12:24:42 Image size of job updated: 451032
+	441  -  MemoryUsage of job (MB)
+	451032  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 12:29:42 Image size of job updated: 451044
+	441  -  MemoryUsage of job (MB)
+	451044  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 13:19:47 Image size of job updated: 451048
+	441  -  MemoryUsage of job (MB)
+	451048  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 13:59:50 Image size of job updated: 471484
+	461  -  MemoryUsage of job (MB)
+	471484  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 14:14:51 Image size of job updated: 473032
+	462  -  MemoryUsage of job (MB)
+	473032  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 14:49:55 Image size of job updated: 473036
+	462  -  MemoryUsage of job (MB)
+	473036  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 15:34:59 Image size of job updated: 474576
+	464  -  MemoryUsage of job (MB)
+	474576  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 15:55:02 Image size of job updated: 474688
+	464  -  MemoryUsage of job (MB)
+	474688  -  ResidentSetSize of job (KB)
+...
+006 (1307.001.000) 2025-05-14 16:10:03 Image size of job updated: 476120
+	465  -  MemoryUsage of job (MB)
+	476120  -  ResidentSetSize of job (KB)
+...
+022 (1307.001.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_16@wcdc-131.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc83]:46627?addrs=[2a05-b400-104-200--500-dc83]-46627&alias=wcdc-131.hep.phy.cam.ac.uk>
+...
+023 (1307.001.000) 2025-05-14 18:07:17 Job reconnected to slot1_16@wcdc-131.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc83]:46627?addrs=[2a05-b400-104-200--500-dc83]-46627&alias=wcdc-131.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc83]:43535?addrs=[2a05-b400-104-200--500-dc83]-43535&alias=wcdc-131.hep.phy.cam.ac.uk>
+...

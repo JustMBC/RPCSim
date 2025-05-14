@@ -25,3 +25,11 @@
 	439  -  MemoryUsage of job (MB)
 	449432  -  ResidentSetSize of job (KB)
 ...
+022 (1307.008.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_7@wcdc-002.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc02]:43533?addrs=[2a05-b400-104-200--500-dc02]-43533&alias=wcdc-002.hep.phy.cam.ac.uk>
+...
+023 (1307.008.000) 2025-05-14 18:07:17 Job reconnected to slot1_7@wcdc-002.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc02]:43533?addrs=[2a05-b400-104-200--500-dc02]-43533&alias=wcdc-002.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc02]:39089?addrs=[2a05-b400-104-200--500-dc02]-39089&alias=wcdc-002.hep.phy.cam.ac.uk>
+...

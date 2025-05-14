@@ -1,0 +1,43 @@
+000 (1309.001.000) 2025-05-14 11:18:54 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (1309.001.000) 2025-05-14 11:19:04 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc80]:34617?addrs=[2a05-b400-104-200--500-dc80]-34617&alias=wcdc-128.hep.phy.cam.ac.uk>
+...
+040 (1309.001.000) 2025-05-14 11:19:11 Finished transferring input files
+...
+001 (1309.001.000) 2025-05-14 11:19:11 Job executing on host: <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
+	SlotName: slot1_8@wcdc-128.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_214821"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (1309.001.000) 2025-05-14 11:19:20 Image size of job updated: 52
+	1  -  MemoryUsage of job (MB)
+	52  -  ResidentSetSize of job (KB)
+...
+006 (1309.001.000) 2025-05-14 11:24:20 Image size of job updated: 450088
+	440  -  MemoryUsage of job (MB)
+	450088  -  ResidentSetSize of job (KB)
+...
+006 (1309.001.000) 2025-05-14 11:29:20 Image size of job updated: 450096
+	440  -  MemoryUsage of job (MB)
+	450096  -  ResidentSetSize of job (KB)
+...
+006 (1309.001.000) 2025-05-14 11:34:21 Image size of job updated: 450100
+	440  -  MemoryUsage of job (MB)
+	450100  -  ResidentSetSize of job (KB)
+...
+006 (1309.001.000) 2025-05-14 11:39:22 Image size of job updated: 450104
+	440  -  MemoryUsage of job (MB)
+	450104  -  ResidentSetSize of job (KB)
+...
+022 (1309.001.000) 2025-05-14 18:07:15 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_8@wcdc-128.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
+...
+023 (1309.001.000) 2025-05-14 18:07:17 Job reconnected to slot1_8@wcdc-128.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc80]:34617?addrs=[2a05-b400-104-200--500-dc80]-34617&alias=wcdc-128.hep.phy.cam.ac.uk>
+...
