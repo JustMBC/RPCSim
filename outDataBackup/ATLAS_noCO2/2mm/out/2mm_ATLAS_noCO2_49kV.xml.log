@@ -1,0 +1,32 @@
+000 (1228.009.000) 2025-05-13 12:13:19 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+009 (1228.009.000) 2025-05-13 12:14:00 Job was aborted.
+	via condor_rm (by user mlc95)
+...
+000 (1229.009.000) 2025-05-13 12:14:08 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:10909?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-10909&alias=el9-08.hep.phy.cam.ac.uk>
+...
+040 (1229.009.000) 2025-05-13 14:44:17 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200:21e:67ff:fefe:924c]:40343?addrs=[2a05-b400-104-200-21e-67ff-fefe-924c]-40343&alias=wcdc-007.hep.phy.cam.ac.uk>
+...
+040 (1229.009.000) 2025-05-14 07:50:25 Finished transferring output files
+...
+005 (1229.009.000) 2025-05-14 07:50:26 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 5 11:27:56, Sys 0 00:03:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 5 11:27:56, Sys 0 00:03:24  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	13849676  -  Run Bytes Sent By Job
+	642155344  -  Run Bytes Received By Job
+	13849676  -  Total Bytes Sent By Job
+	642155344  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.99        4         4 
+	   Disk (KB)            : 655173     4194304   4195328 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    440        4096      4096 
+	   TimeExecute (s)      :  61553                       
+	   TimeSlotBusy (s)     :  61568                       
+
+	Job terminated of its own accord at 2025-05-14T06:50:22Z with exit-code 0.
+...

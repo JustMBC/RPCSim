@@ -59,7 +59,8 @@ def save_to_csv(binary_file, csv_file):
         writer = csv.writer(csvfile)
         # Write header row
         writer.writerow([
-            "Dx", "Dt", "iNstep", "thrCrossTimeStep", "avalStatus", "computeTime", "streamer", "classicStreamer", "elecLimit", "nCluster", 
+            "Dx", "Dt", "iNstep", "thrCrossTimeStep", "avalStatus", "computeTime", "streamer", 
+            "classicStreamer", "elecLimit", "nCluster", 
             #"charges_size", "chargesTot_size", "signal_size", 
             "size", "finalChargesTot", "ElecThr", "ElecThrReachedTime", "ElecMax", "InducedChargeThr", 
             "InducedChargeThrTime", "ChargeMax"
