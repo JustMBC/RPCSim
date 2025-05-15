@@ -1,6 +1,6 @@
 <Detector>
     <GapWidth>0.1</GapWidth>
-    <Steps>500</Steps>
+    <Steps>1000</Steps>
     <Anode>
 			<width>0.12</width>
 			<permittivity>5</permittivity>
@@ -10,7 +10,7 @@
 			<permittivity>5</permittivity>
     </Cathode>
     <ElectricField>50000</ElectricField>
-    <Threshold>3</Threshold>
+    <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -42,10 +42,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>50</Events>
-	<Threads>8</Threads>
+	<Events>100</Events>
+	<Threads>12</Threads>
 	
-	<OutFile>2_ATLAS_noCO2_50kV.dat</OutFile>
+	<OutFile>ATLAS_noCO2_50kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

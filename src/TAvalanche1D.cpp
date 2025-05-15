@@ -773,13 +773,14 @@ bool TAvalanche1D::avalanche() {
 			makeSnapshot();
 		
 		/* First we compute the space charge electric field and update parameters */
-		if ( bComputeSpaceChargeEffet and !bOnlyMultiplicationAvalanche )
+		if ( bComputeSpaceChargeEffet and !bOnlyMultiplicationAvalanche ) {
 			computeSCEffect();
+			computeLongitudinalSCEffect(); // moved this before propagate
+		}
 			
 		if ( !propagate() )
 			return false;
-			
-		//computeLongitudinalSCEffect();
+		
 		
 		/* Empty the first bin after the first multplication procedure to avoid infinite elec creation */
 		if (iTimeStep == 1)
