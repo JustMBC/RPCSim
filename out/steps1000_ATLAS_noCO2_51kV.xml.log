@@ -53,3 +53,42 @@
     startd address: <[2a05:b400:104:200::500:dc23]:43755?addrs=[2a05-b400-104-200--500-dc23]-43755&alias=wcdc-035.hep.phy.cam.ac.uk>
     starter address: <[2a05:b400:104:200::500:dc23]:34963?addrs=[2a05-b400-104-200--500-dc23]-34963&alias=wcdc-035.hep.phy.cam.ac.uk>
 ...
+004 (1307.004.000) 2025-05-15 07:00:35 Job was evicted. Code 1005 Subcode 0
+	(0) CPU times
+		Usr 6 13:24:36, Sys 0 00:00:51  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Unspecified job interruption
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          7.83        4         4 
+	   Disk (KB)            :     648639     4194304   4195328 
+	   Memory (MB)          :        440        4096      4096 
+	   TimeExecute (s)      : 1747288835                       
+	   TimeSlotBusy (s)     : 1747288835                       
+...
+040 (1307.004.000) 2025-05-15 07:03:17 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200:21e:67ff:fefe:8f90]:40851?addrs=[2a05-b400-104-200-21e-67ff-fefe-8f90]-40851&alias=wcdc-012.hep.phy.cam.ac.uk>
+...
+040 (1307.004.000) 2025-05-15 07:03:28 Finished transferring input files
+...
+001 (1307.004.000) 2025-05-15 07:03:28 Job executing on host: <[2a05:b400:104:200:21e:67ff:fefe:8f90]:39853?addrs=[2a05-b400-104-200-21e-67ff-fefe-8f90]-39853&alias=wcdc-012.hep.phy.cam.ac.uk>
+	SlotName: slot1_2@wcdc-012.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_1940183"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (1307.004.000) 2025-05-15 07:13:37 Image size of job updated: 451472
+	441  -  MemoryUsage of job (MB)
+	451472  -  ResidentSetSize of job (KB)
+...
+022 (1307.004.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_2@wcdc-012.hep.phy.cam.ac.uk <[2a05:b400:104:200:21e:67ff:fefe:8f90]:39853?addrs=[2a05-b400-104-200-21e-67ff-fefe-8f90]-39853&alias=wcdc-012.hep.phy.cam.ac.uk>
+...
+023 (1307.004.000) 2025-05-15 15:57:12 Job reconnected to slot1_2@wcdc-012.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200:21e:67ff:fefe:8f90]:39853?addrs=[2a05-b400-104-200-21e-67ff-fefe-8f90]-39853&alias=wcdc-012.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200:21e:67ff:fefe:8f90]:40851?addrs=[2a05-b400-104-200-21e-67ff-fefe-8f90]-40851&alias=wcdc-012.hep.phy.cam.ac.uk>
+...

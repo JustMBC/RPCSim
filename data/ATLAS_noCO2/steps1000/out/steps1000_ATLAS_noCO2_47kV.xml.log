@@ -73,3 +73,22 @@
     startd address: <[2a05:b400:104:200::500:dc84]:33677?addrs=[2a05-b400-104-200--500-dc84]-33677&alias=wcdc-132.hep.phy.cam.ac.uk>
     starter address: <[2a05:b400:104:200::500:dc84]:42303?addrs=[2a05-b400-104-200--500-dc84]-42303&alias=wcdc-132.hep.phy.cam.ac.uk>
 ...
+005 (1307.000.000) 2025-05-15 05:51:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 6 03:02:43, Sys 0 00:01:53  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 8 12:38:56, Sys 0 00:03:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	7344676  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	7344676  -  Total Bytes Sent By Job
+	634433751  -  Total Bytes Received By Job
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          0.99        4         4 
+	   Disk (KB)            :     648833     4194304   4195328 
+	   Memory (MB)          :        464        4096      4096 
+	   TimeExecute (s)      : 1747284702                       
+	   TimeSlotBusy (s)     : 1747284702                       
+
+	Job terminated of its own accord at 2025-05-15T04:51:42Z with exit-code 0.
+...

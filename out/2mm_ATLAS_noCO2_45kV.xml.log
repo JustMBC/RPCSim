@@ -21,3 +21,59 @@
 	439  -  MemoryUsage of job (MB)
 	449332  -  ResidentSetSize of job (KB)
 ...
+006 (7469.000.000) 2025-05-14 22:39:41 Image size of job updated: 449336
+	439  -  MemoryUsage of job (MB)
+	449336  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-14 23:19:45 Image size of job updated: 449376
+	439  -  MemoryUsage of job (MB)
+	449376  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 01:04:56 Image size of job updated: 451080
+	441  -  MemoryUsage of job (MB)
+	451080  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 01:09:57 Image size of job updated: 452616
+	443  -  MemoryUsage of job (MB)
+	452616  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 03:35:14 Image size of job updated: 454160
+	444  -  MemoryUsage of job (MB)
+	454160  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 04:00:15 Image size of job updated: 476028
+	465  -  MemoryUsage of job (MB)
+	476028  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 04:05:16 Image size of job updated: 477564
+	467  -  MemoryUsage of job (MB)
+	477564  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 04:10:16 Image size of job updated: 477588
+	467  -  MemoryUsage of job (MB)
+	477588  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 04:40:19 Image size of job updated: 479152
+	468  -  MemoryUsage of job (MB)
+	479152  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 04:45:20 Image size of job updated: 480692
+	470  -  MemoryUsage of job (MB)
+	480692  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 06:40:30 Image size of job updated: 482104
+	471  -  MemoryUsage of job (MB)
+	482104  -  ResidentSetSize of job (KB)
+...
+006 (7469.000.000) 2025-05-15 07:05:32 Image size of job updated: 482108
+	471  -  MemoryUsage of job (MB)
+	482108  -  ResidentSetSize of job (KB)
+...
+022 (7469.000.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_7@wcdc-006.hep.phy.cam.ac.uk <[2a05:b400:104:200:21e:67ff:fefe:d286]:36845?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-36845&alias=wcdc-006.hep.phy.cam.ac.uk>
+...
+023 (7469.000.000) 2025-05-15 15:57:13 Job reconnected to slot1_7@wcdc-006.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200:21e:67ff:fefe:d286]:36845?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-36845&alias=wcdc-006.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200:21e:67ff:fefe:d286]:46241?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-46241&alias=wcdc-006.hep.phy.cam.ac.uk>
+...

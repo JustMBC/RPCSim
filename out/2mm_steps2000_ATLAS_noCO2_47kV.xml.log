@@ -57,3 +57,50 @@
     startd address: <[2a05:b400:104:200::500:dc23]:43755?addrs=[2a05-b400-104-200--500-dc23]-43755&alias=wcdc-035.hep.phy.cam.ac.uk>
     starter address: <[2a05:b400:104:200::500:dc23]:43437?addrs=[2a05-b400-104-200--500-dc23]-43437&alias=wcdc-035.hep.phy.cam.ac.uk>
 ...
+004 (1309.007.000) 2025-05-15 07:00:35 Job was evicted. Code 1005 Subcode 0
+	(0) CPU times
+		Usr 6 06:12:32, Sys 0 00:01:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Unspecified job interruption
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          7.88        4         4 
+	   Disk (KB)            :     654576     4194304   4195328 
+	   Memory (MB)          :        440        4096      4096 
+	   TimeExecute (s)      : 1747288835                       
+	   TimeSlotBusy (s)     : 1747288835                       
+...
+040 (1309.007.000) 2025-05-15 07:03:17 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc84]:35089?addrs=[2a05-b400-104-200--500-dc84]-35089&alias=wcdc-132.hep.phy.cam.ac.uk>
+...
+040 (1309.007.000) 2025-05-15 07:03:24 Finished transferring input files
+...
+001 (1309.007.000) 2025-05-15 07:03:24 Job executing on host: <[2a05:b400:104:200::500:dc84]:33677?addrs=[2a05-b400-104-200--500-dc84]-33677&alias=wcdc-132.hep.phy.cam.ac.uk>
+	SlotName: slot1_5@wcdc-132.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_3265800"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (1309.007.000) 2025-05-15 07:08:33 Image size of job updated: 452152
+	442  -  MemoryUsage of job (MB)
+	452152  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-15 07:13:33 Image size of job updated: 452164
+	442  -  MemoryUsage of job (MB)
+	452164  -  ResidentSetSize of job (KB)
+...
+006 (1309.007.000) 2025-05-15 07:48:36 Image size of job updated: 452192
+	442  -  MemoryUsage of job (MB)
+	452192  -  ResidentSetSize of job (KB)
+...
+022 (1309.007.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_5@wcdc-132.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc84]:33677?addrs=[2a05-b400-104-200--500-dc84]-33677&alias=wcdc-132.hep.phy.cam.ac.uk>
+...
+023 (1309.007.000) 2025-05-15 15:57:12 Job reconnected to slot1_5@wcdc-132.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc84]:33677?addrs=[2a05-b400-104-200--500-dc84]-33677&alias=wcdc-132.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc84]:35089?addrs=[2a05-b400-104-200--500-dc84]-35089&alias=wcdc-132.hep.phy.cam.ac.uk>
+...

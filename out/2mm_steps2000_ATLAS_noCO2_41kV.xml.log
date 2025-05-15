@@ -41,3 +41,19 @@
     startd address: <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
     starter address: <[2a05:b400:104:200::500:dc80]:34617?addrs=[2a05-b400-104-200--500-dc80]-34617&alias=wcdc-128.hep.phy.cam.ac.uk>
 ...
+006 (1309.001.000) 2025-05-15 04:31:08 Image size of job updated: 480556
+	470  -  MemoryUsage of job (MB)
+	480556  -  ResidentSetSize of job (KB)
+...
+006 (1309.001.000) 2025-05-15 15:37:31 Image size of job updated: 480592
+	470  -  MemoryUsage of job (MB)
+	480556  -  ResidentSetSize of job (KB)
+...
+022 (1309.001.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_8@wcdc-128.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
+...
+023 (1309.001.000) 2025-05-15 15:57:12 Job reconnected to slot1_8@wcdc-128.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc80]:43763?addrs=[2a05-b400-104-200--500-dc80]-43763&alias=wcdc-128.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc80]:34617?addrs=[2a05-b400-104-200--500-dc80]-34617&alias=wcdc-128.hep.phy.cam.ac.uk>
+...

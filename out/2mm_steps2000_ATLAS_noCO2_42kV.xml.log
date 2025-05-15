@@ -69,3 +69,35 @@
 	443  -  MemoryUsage of job (MB)
 	452916  -  ResidentSetSize of job (KB)
 ...
+006 (1309.002.000) 2025-05-15 02:45:52 Image size of job updated: 452920
+	443  -  MemoryUsage of job (MB)
+	452920  -  ResidentSetSize of job (KB)
+...
+006 (1309.002.000) 2025-05-15 04:31:00 Image size of job updated: 454464
+	444  -  MemoryUsage of job (MB)
+	454464  -  ResidentSetSize of job (KB)
+...
+006 (1309.002.000) 2025-05-15 06:06:11 Image size of job updated: 476272
+	466  -  MemoryUsage of job (MB)
+	476272  -  ResidentSetSize of job (KB)
+...
+006 (1309.002.000) 2025-05-15 07:06:16 Image size of job updated: 477828
+	467  -  MemoryUsage of job (MB)
+	477828  -  ResidentSetSize of job (KB)
+...
+006 (1309.002.000) 2025-05-15 08:46:27 Image size of job updated: 479368
+	469  -  MemoryUsage of job (MB)
+	479368  -  ResidentSetSize of job (KB)
+...
+006 (1309.002.000) 2025-05-15 09:01:29 Image size of job updated: 480924
+	470  -  MemoryUsage of job (MB)
+	480924  -  ResidentSetSize of job (KB)
+...
+022 (1309.002.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_3@wcdc-002.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc02]:43533?addrs=[2a05-b400-104-200--500-dc02]-43533&alias=wcdc-002.hep.phy.cam.ac.uk>
+...
+023 (1309.002.000) 2025-05-15 15:57:12 Job reconnected to slot1_3@wcdc-002.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc02]:43533?addrs=[2a05-b400-104-200--500-dc02]-43533&alias=wcdc-002.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc02]:37039?addrs=[2a05-b400-104-200--500-dc02]-37039&alias=wcdc-002.hep.phy.cam.ac.uk>
+...

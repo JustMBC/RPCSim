@@ -16,3 +16,137 @@
 	   GPUs                 :                           0 
 	   Memory (MB)          :              4096      4096 
 ...
+021 (7470.000.000) 2025-05-14 22:38:44 Error from starter on slot1_3@wcdc-001.hep.phy.cam.ac.uk:
+	Could not initiate file transfer
+...
+004 (7470.000.000) 2025-05-14 22:39:04 Job was evicted. Code 1007 Subcode 0
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Error from slot1_3@wcdc-001.hep.phy.cam.ac.uk: Could not initiate file transfer
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :   750000  4194304   4195328 
+	   GPUs                 :                           0 
+	   Memory (MB)          :              4096      4096 
+...
+021 (7470.000.000) 2025-05-14 22:39:44 Error from starter on slot1_3@wcdc-001.hep.phy.cam.ac.uk:
+	Could not initiate file transfer
+...
+004 (7470.000.000) 2025-05-14 22:40:04 Job was evicted. Code 1007 Subcode 0
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Error from slot1_3@wcdc-001.hep.phy.cam.ac.uk: Could not initiate file transfer
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :   750000  4194304   4195328 
+	   GPUs                 :                           0 
+	   Memory (MB)          :              4096      4096 
+...
+021 (7470.000.000) 2025-05-14 22:40:44 Error from starter on slot1_3@wcdc-001.hep.phy.cam.ac.uk:
+	Could not initiate file transfer
+...
+004 (7470.000.000) 2025-05-14 22:41:04 Job was evicted. Code 1007 Subcode 0
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Error from slot1_3@wcdc-001.hep.phy.cam.ac.uk: Could not initiate file transfer
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :   750000  4194304   4195328 
+	   GPUs                 :                           0 
+	   Memory (MB)          :              4096      4096 
+...
+040 (7470.000.000) 2025-05-14 22:41:44 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc81]:41007?addrs=[2a05-b400-104-200--500-dc81]-41007&alias=wcdc-129.hep.phy.cam.ac.uk>
+...
+040 (7470.000.000) 2025-05-14 22:41:50 Finished transferring input files
+...
+001 (7470.000.000) 2025-05-14 22:41:50 Job executing on host: <[2a05:b400:104:200::500:dc81]:40721?addrs=[2a05-b400-104-200--500-dc81]-40721&alias=wcdc-129.hep.phy.cam.ac.uk>
+	SlotName: slot1_3@wcdc-129.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_1565540"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+006 (7470.000.000) 2025-05-14 22:41:59 Image size of job updated: 111300
+	109  -  MemoryUsage of job (MB)
+	111300  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-14 22:47:00 Image size of job updated: 449380
+	439  -  MemoryUsage of job (MB)
+	449380  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-14 23:12:03 Image size of job updated: 449424
+	439  -  MemoryUsage of job (MB)
+	449424  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 00:12:11 Image size of job updated: 450968
+	441  -  MemoryUsage of job (MB)
+	450968  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 01:57:20 Image size of job updated: 450972
+	441  -  MemoryUsage of job (MB)
+	450972  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 02:12:22 Image size of job updated: 452516
+	442  -  MemoryUsage of job (MB)
+	452516  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 03:47:33 Image size of job updated: 454068
+	444  -  MemoryUsage of job (MB)
+	454068  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 04:12:35 Image size of job updated: 454076
+	444  -  MemoryUsage of job (MB)
+	454076  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 04:27:36 Image size of job updated: 455636
+	445  -  MemoryUsage of job (MB)
+	455636  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 05:02:38 Image size of job updated: 477496
+	467  -  MemoryUsage of job (MB)
+	477496  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 05:22:39 Image size of job updated: 479036
+	468  -  MemoryUsage of job (MB)
+	479036  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 05:37:41 Image size of job updated: 480588
+	470  -  MemoryUsage of job (MB)
+	480588  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 07:32:54 Image size of job updated: 480604
+	470  -  MemoryUsage of job (MB)
+	480604  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 08:07:59 Image size of job updated: 480616
+	470  -  MemoryUsage of job (MB)
+	480616  -  ResidentSetSize of job (KB)
+...
+006 (7470.000.000) 2025-05-15 09:08:03 Image size of job updated: 480684
+	470  -  MemoryUsage of job (MB)
+	480684  -  ResidentSetSize of job (KB)
+...
+000 (8271.000.000) 2025-05-15 15:46:22 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:17825?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-17825&alias=el9-08.hep.phy.cam.ac.uk>
+...
+009 (8271.000.000) 2025-05-15 15:48:04 Job was aborted.
+	via condor_rm (by user mlc95)
+...
+022 (7470.000.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_3@wcdc-129.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc81]:40721?addrs=[2a05-b400-104-200--500-dc81]-40721&alias=wcdc-129.hep.phy.cam.ac.uk>
+...
+023 (7470.000.000) 2025-05-15 15:57:12 Job reconnected to slot1_3@wcdc-129.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc81]:40721?addrs=[2a05-b400-104-200--500-dc81]-40721&alias=wcdc-129.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc81]:41007?addrs=[2a05-b400-104-200--500-dc81]-41007&alias=wcdc-129.hep.phy.cam.ac.uk>
+...

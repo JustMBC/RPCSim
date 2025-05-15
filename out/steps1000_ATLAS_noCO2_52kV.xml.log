@@ -37,3 +37,11 @@
     startd address: <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
     starter address: <[2a05:b400:104:200::500:dc22]:42007?addrs=[2a05-b400-104-200--500-dc22]-42007&alias=wcdc-034.hep.phy.cam.ac.uk>
 ...
+022 (1307.005.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_18@wcdc-034.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
+...
+023 (1307.005.000) 2025-05-15 15:57:13 Job reconnected to slot1_18@wcdc-034.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc22]:42007?addrs=[2a05-b400-104-200--500-dc22]-42007&alias=wcdc-034.hep.phy.cam.ac.uk>
+...

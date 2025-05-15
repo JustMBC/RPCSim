@@ -53,3 +53,38 @@
     startd address: <[2a05:b400:104:200::500:dc23]:43755?addrs=[2a05-b400-104-200--500-dc23]-43755&alias=wcdc-035.hep.phy.cam.ac.uk>
     starter address: <[2a05:b400:104:200::500:dc23]:34819?addrs=[2a05-b400-104-200--500-dc23]-34819&alias=wcdc-035.hep.phy.cam.ac.uk>
 ...
+004 (1307.007.000) 2025-05-15 07:00:35 Job was evicted. Code 1005 Subcode 0
+	(0) CPU times
+		Usr 6 13:00:58, Sys 0 00:02:13  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Unspecified job interruption
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          7.87        4         4 
+	   Disk (KB)            :     648654     4194304   4195328 
+	   Memory (MB)          :        440        4096      4096 
+	   TimeExecute (s)      : 1747288835                       
+	   TimeSlotBusy (s)     : 1747288835                       
+...
+040 (1307.007.000) 2025-05-15 07:03:17 Started transferring input files
+	Transferring to host: <[2a05:b400:104:200::500:dc22]:43879?addrs=[2a05-b400-104-200--500-dc22]-43879&alias=wcdc-034.hep.phy.cam.ac.uk>
+...
+040 (1307.007.000) 2025-05-15 07:03:25 Finished transferring input files
+...
+001 (1307.007.000) 2025-05-15 07:03:25 Job executing on host: <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
+	SlotName: slot1_6@wcdc-034.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_1986870"
+	Cpus = 4
+	Disk = 4195328
+	GPUs = 0
+	Memory = 4096
+...
+022 (1307.007.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_6@wcdc-034.hep.phy.cam.ac.uk <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
+...
+023 (1307.007.000) 2025-05-15 15:57:12 Job reconnected to slot1_6@wcdc-034.hep.phy.cam.ac.uk
+    startd address: <[2a05:b400:104:200::500:dc22]:41377?addrs=[2a05-b400-104-200--500-dc22]-41377&alias=wcdc-034.hep.phy.cam.ac.uk>
+    starter address: <[2a05:b400:104:200::500:dc22]:43879?addrs=[2a05-b400-104-200--500-dc22]-43879&alias=wcdc-034.hep.phy.cam.ac.uk>
+...
