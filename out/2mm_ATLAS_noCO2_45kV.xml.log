@@ -1,79 +1,102 @@
-000 (7469.000.000) 2025-05-14 22:29:19 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:17825?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-17825&alias=el9-08.hep.phy.cam.ac.uk>
+000 (10951.008.000) 2025-05-16 00:43:04 Job submitted from host: <[2a05:b400:104:200:20a:f7ff:fe41:b290]:27247?addrs=[2a05-b400-104-200-20a-f7ff-fe41-b290]-27247&alias=el9-08.hep.phy.cam.ac.uk>
 ...
-040 (7469.000.000) 2025-05-14 22:29:23 Started transferring input files
-	Transferring to host: <[2a05:b400:104:200:21e:67ff:fefe:d286]:46241?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-46241&alias=wcdc-006.hep.phy.cam.ac.uk>
+040 (10951.008.000) 2025-05-16 09:56:47 Entered queue to transfer input files
+	Transferring to host: <[2a05:b400:104:200:1a66:daff:fe97:10a4]:38489?addrs=[2a05-b400-104-200-1a66-daff-fe97-10a4]-38489&alias=wcdc-003.hep.phy.cam.ac.uk>
 ...
-040 (7469.000.000) 2025-05-14 22:29:32 Finished transferring input files
+040 (10951.008.000) 2025-05-16 09:57:07 Started transferring input files
+	Seconds spent in queue: 20
 ...
-001 (7469.000.000) 2025-05-14 22:29:32 Job executing on host: <[2a05:b400:104:200:21e:67ff:fefe:d286]:36845?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-36845&alias=wcdc-006.hep.phy.cam.ac.uk>
-	SlotName: slot1_7@wcdc-006.hep.phy.cam.ac.uk
-	CondorScratchDir = "/var/work/condor/execute/dir_3132287"
+040 (10951.008.000) 2025-05-16 09:57:37 Finished transferring input files
+...
+001 (10951.008.000) 2025-05-16 09:57:37 Job executing on host: <[2a05:b400:104:200:1a66:daff:fe97:10a4]:38099?addrs=[2a05-b400-104-200-1a66-daff-fe97-10a4]-38099&alias=wcdc-003.hep.phy.cam.ac.uk>
+	SlotName: slot1_8@wcdc-003.hep.phy.cam.ac.uk
+	CondorScratchDir = "/var/work/condor/execute/dir_7412"
 	Cpus = 4
 	Disk = 4195328
 	GPUs = 0
 	Memory = 4096
 ...
-006 (7469.000.000) 2025-05-14 22:29:40 Image size of job updated: 56
-	1  -  MemoryUsage of job (MB)
-	56  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 09:57:45 Image size of job updated: 23180
+	23  -  MemoryUsage of job (MB)
+	23180  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-14 22:34:40 Image size of job updated: 449332
-	439  -  MemoryUsage of job (MB)
-	449332  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 10:02:45 Image size of job updated: 625884
+	612  -  MemoryUsage of job (MB)
+	625884  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-14 22:39:41 Image size of job updated: 449336
-	439  -  MemoryUsage of job (MB)
-	449336  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 10:12:47 Image size of job updated: 625888
+	612  -  MemoryUsage of job (MB)
+	625888  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-14 23:19:45 Image size of job updated: 449376
-	439  -  MemoryUsage of job (MB)
-	449376  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 12:28:01 Image size of job updated: 625920
+	612  -  MemoryUsage of job (MB)
+	625920  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 01:04:56 Image size of job updated: 451080
-	441  -  MemoryUsage of job (MB)
-	451080  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 12:33:01 Image size of job updated: 627720
+	614  -  MemoryUsage of job (MB)
+	627720  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 01:09:57 Image size of job updated: 452616
-	443  -  MemoryUsage of job (MB)
-	452616  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 14:48:14 Image size of job updated: 629252
+	615  -  MemoryUsage of job (MB)
+	629252  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 03:35:14 Image size of job updated: 454160
-	444  -  MemoryUsage of job (MB)
-	454160  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 15:48:20 Image size of job updated: 630788
+	617  -  MemoryUsage of job (MB)
+	630788  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 04:00:15 Image size of job updated: 476028
-	465  -  MemoryUsage of job (MB)
-	476028  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 17:23:30 Image size of job updated: 630796
+	617  -  MemoryUsage of job (MB)
+	630796  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 04:05:16 Image size of job updated: 477564
-	467  -  MemoryUsage of job (MB)
-	477564  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 20:08:46 Image size of job updated: 632356
+	618  -  MemoryUsage of job (MB)
+	632356  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 04:10:16 Image size of job updated: 477588
-	467  -  MemoryUsage of job (MB)
-	477588  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 21:43:57 Image size of job updated: 633900
+	620  -  MemoryUsage of job (MB)
+	633900  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 04:40:19 Image size of job updated: 479152
-	468  -  MemoryUsage of job (MB)
-	479152  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 22:24:00 Image size of job updated: 635488
+	621  -  MemoryUsage of job (MB)
+	635488  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 04:45:20 Image size of job updated: 480692
-	470  -  MemoryUsage of job (MB)
-	480692  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 22:44:02 Image size of job updated: 635492
+	621  -  MemoryUsage of job (MB)
+	635492  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 06:40:30 Image size of job updated: 482104
-	471  -  MemoryUsage of job (MB)
-	482104  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-16 23:19:06 Image size of job updated: 635600
+	621  -  MemoryUsage of job (MB)
+	635600  -  ResidentSetSize of job (KB)
 ...
-006 (7469.000.000) 2025-05-15 07:05:32 Image size of job updated: 482108
-	471  -  MemoryUsage of job (MB)
-	482108  -  ResidentSetSize of job (KB)
+006 (10951.008.000) 2025-05-17 01:24:18 Image size of job updated: 636884
+	622  -  MemoryUsage of job (MB)
+	636884  -  ResidentSetSize of job (KB)
 ...
-022 (7469.000.000) 2025-05-15 15:57:12 Job disconnected, attempting to reconnect
-    Local schedd and job shadow died, schedd now running again
-    Trying to reconnect to slot1_7@wcdc-006.hep.phy.cam.ac.uk <[2a05:b400:104:200:21e:67ff:fefe:d286]:36845?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-36845&alias=wcdc-006.hep.phy.cam.ac.uk>
+006 (10951.008.000) 2025-05-17 02:34:24 Image size of job updated: 658276
+	643  -  MemoryUsage of job (MB)
+	658276  -  ResidentSetSize of job (KB)
 ...
-023 (7469.000.000) 2025-05-15 15:57:13 Job reconnected to slot1_7@wcdc-006.hep.phy.cam.ac.uk
-    startd address: <[2a05:b400:104:200:21e:67ff:fefe:d286]:36845?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-36845&alias=wcdc-006.hep.phy.cam.ac.uk>
-    starter address: <[2a05:b400:104:200:21e:67ff:fefe:d286]:46241?addrs=[2a05-b400-104-200-21e-67ff-fefe-d286]-46241&alias=wcdc-006.hep.phy.cam.ac.uk>
+006 (10951.008.000) 2025-05-17 05:59:44 Image size of job updated: 659808
+	645  -  MemoryUsage of job (MB)
+	659808  -  ResidentSetSize of job (KB)
+...
+006 (10951.008.000) 2025-05-17 11:15:15 Image size of job updated: 660912
+	646  -  MemoryUsage of job (MB)
+	660912  -  ResidentSetSize of job (KB)
+...
+006 (10951.008.000) 2025-05-17 11:50:18 Image size of job updated: 661904
+	647  -  MemoryUsage of job (MB)
+	661904  -  ResidentSetSize of job (KB)
+...
+006 (10951.008.000) 2025-05-17 12:50:25 Image size of job updated: 661912
+	647  -  MemoryUsage of job (MB)
+	661912  -  ResidentSetSize of job (KB)
+...
+006 (10951.008.000) 2025-05-17 13:15:27 Image size of job updated: 661920
+	647  -  MemoryUsage of job (MB)
+	661920  -  ResidentSetSize of job (KB)
+...
+006 (10951.008.000) 2025-05-17 13:25:28 Image size of job updated: 661932
+	647  -  MemoryUsage of job (MB)
+	661932  -  ResidentSetSize of job (KB)
 ...

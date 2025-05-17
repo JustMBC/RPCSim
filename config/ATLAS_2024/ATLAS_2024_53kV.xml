@@ -10,7 +10,7 @@
 			<permittivity>5</permittivity>
     </Cathode>
     <ElectricField>53000</ElectricField>
-    <Threshold>3</Threshold>
+    <Threshold>0.1</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -46,8 +46,8 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>72</Events>
-	<Threads>4</Threads>
+	<Events>100</Events>
+	<Threads>12</Threads>
 	
 	<OutFile>ATLAS_2024_53kV.dat</OutFile>
 	

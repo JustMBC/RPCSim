@@ -684,19 +684,47 @@ void TAvalanche1D::computeLongitudinalSCEffect() {
 		if (n == 0)
 			continue;
 			
-		
 		x = fVx.at(z)/fVini;
 		trx = trunc(x);
 		Px = x - trx;
-		if (Px < 0.01 or Px>0.99) {
-			newGrid.at(z) = n;
+
+		if (Px < 0.01 or Px > 0.99) {
+			newGrid.at(z) += n; // changed from = to +=
 			continue;
 		}
 		
-		cout << z << "\t" << x  << "\t" << n << "\t" << Px << "\t" << z+trx << ":" << n-trunc(Px*n) << "\t" << z+1+trx << ":" << trunc(Px*n) << endl;
+        // cout << z << "\t" << x << "\t" << n << "\t" << Px 
+        //     << "\t" << z+trx << ":" << n-trunc(Px*n) 
+        //     << "\t" << z+1+trx << ":" << trunc(Px*n) << endl;
+        
+        modified = true;
+        
+        int stayIndex = z + static_cast<int>(trx);
+        int moveIndex = z + static_cast<int>(trx) + 1;
+        
+        // Ensure integer particle counts
+        double moveAmount = trunc(Px * n);
+        double stayAmount = n - moveAmount;
+        
+        // Both indices in range - normal case
+        if (stayIndex < iNstep && moveIndex < iNstep) {
+            // cout << 1 << endl;
+            newGrid.at(stayIndex) += stayAmount;
+            newGrid.at(moveIndex) += moveAmount;
+        }
+        // Only stayIndex in range
+        else if (stayIndex < iNstep && moveIndex >= iNstep) {
+            newGrid.at(stayIndex) += stayAmount;
+            newGrid.at(iNstep-1) += moveAmount;  // Put at edge of grid
+        }
+        // Both out of range (shouldn't happen but just in case)
+        else if (stayIndex >= iNstep) {
+            newGrid.at(iNstep-1) += n;  // Put everything at edge of grid
+        }
 		
-		modified = true;
+		/* 			old code
 		
+		cout << iNstep << "\t" << z << "\t" << x  << "\t" << n << "\t" << Px << "\t" << z+trx << ":" << n-trunc(Px*n) << "\t" << z+1+trx << ":" << trunc(Px*n) << endl;
 		if (z+trx >= iNstep-1) {
 			newGrid.at(iNstep-1) += n;
 			//continue;
@@ -704,7 +732,7 @@ void TAvalanche1D::computeLongitudinalSCEffect() {
 		else if (z+1+trx >= iNstep-1) {
 			newGrid.at(iNstep-1) += trunc(Px * n);
 			newGrid.at(z+trx) += n - trunc(Px * n);
-			//continue;
+			//continue;	
 		}
 		else {
 			cout << 1 << endl;
@@ -712,14 +740,14 @@ void TAvalanche1D::computeLongitudinalSCEffect() {
 			newGrid.at(z+trx) += n - trunc(Px * n);
 			newGrid.at(z+1+trx) += trunc(Px * n);
 		}
-	}
-	
-	if (modified) {
-		cout << sumVec(newGrid) << " " << sumVec(fElecDetectorGrid) << endl;
-		assert (sumVec(newGrid) == sumVec(fElecDetectorGrid));
-		fElecDetectorGrid = newGrid;
-	}
-	
+		*/
+    }
+    
+    if (modified) {
+        // cout << sumVec(newGrid) << " " << sumVec(fElecDetectorGrid) << endl;
+        assert(sumVec(newGrid) == sumVec(fElecDetectorGrid));
+        fElecDetectorGrid = newGrid;
+    }
 }
 
 bool TAvalanche1D::checkForExplosiveBehavior() {

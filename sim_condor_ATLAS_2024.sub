@@ -5,7 +5,7 @@ Requirements = (OpSysAndVer == "AlmaLinux9")
 
 Rank = kflops
 request_cpus = 4
-request_memory = 6G
+request_memory = 4G
 request_disk = 4G
 
 output = out/$(CONFIG_FILE).out
@@ -21,6 +21,9 @@ transfer_input_files = sim , ./config , ./gastables , ./EbarTables
 transfer_output_files = out
 
 queue CONFIG_FILE from (
+  ATLAS_2024_44kV.xml
+  ATLAS_2024_45kV.xml
+  ATLAS_2024_46kV.xml
   ATLAS_2024_47kV.xml
   ATLAS_2024_48kV.xml
   ATLAS_2024_49kV.xml
@@ -32,4 +35,9 @@ queue CONFIG_FILE from (
   ATLAS_2024_55kV.xml
   ATLAS_2024_56kV.xml
   ATLAS_2024_57kV.xml
+  ATLAS_2024_58kV.xml
+  ATLAS_2024_59kV.xml
+  ATLAS_2024_60kV.xml
+  ATLAS_2024_61kV.xml
+  ATLAS_2024_62kV.xml
 )

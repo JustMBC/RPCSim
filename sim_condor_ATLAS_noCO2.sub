@@ -21,8 +21,6 @@ transfer_input_files = sim , ./config , ./gastables , ./EbarTables
 transfer_output_files = out
 
 queue CONFIG_FILE from (
-  ATLAS_noCO2_42kV.xml
-  ATLAS_noCO2_43kV.xml
   ATLAS_noCO2_44kV.xml
   ATLAS_noCO2_45kV.xml
   ATLAS_noCO2_46kV.xml
@@ -35,4 +33,11 @@ queue CONFIG_FILE from (
   ATLAS_noCO2_53kV.xml
   ATLAS_noCO2_54kV.xml
   ATLAS_noCO2_55kV.xml
+  ATLAS_noCO2_56kV.xml
+  ATLAS_noCO2_57kV.xml
+  ATLAS_noCO2_58kV.xml
+  ATLAS_noCO2_59kV.xml
+  ATLAS_noCO2_60kV.xml
+  ATLAS_noCO2_61kV.xml
+  ATLAS_noCO2_62kV.xml
 )

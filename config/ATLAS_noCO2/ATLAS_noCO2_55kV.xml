@@ -1,6 +1,6 @@
 <Detector>
     <GapWidth>0.1</GapWidth>
-    <Steps>1000</Steps>
+    <Steps>500</Steps>
     <Anode>
 			<width>0.12</width>
 			<permittivity>5</permittivity>

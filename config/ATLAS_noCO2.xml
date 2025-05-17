@@ -42,8 +42,8 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>12</Events>
-	<Threads>12</Threads>
+	<Events>8</Events>
+	<Threads>8</Threads>
 	
 	<OutFile>test_ATLAS_noCO2.dat</OutFile>
 	
