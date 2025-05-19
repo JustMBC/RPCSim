@@ -39,6 +39,7 @@ struct TResult
 	int nCluster;
 	uint size;
 	double finalChargesTot;
+	double totalInducedCharge;
 	double ElecThr;
 	int ElecThrReachedTime;
 	double ElecMax;

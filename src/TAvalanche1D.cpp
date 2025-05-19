@@ -328,6 +328,7 @@ void TAvalanche1D::makeResultFile() {
 	fResult.signal_size = fSignal.size();*/
 	fResult.size = fCharges.size();
 	fResult.finalChargesTot = fTotalCharges[fTotalCharges.size() - 1];
+	fResult.totalInducedCharge = fSignal[fSignal.size() - 1] * fDt;
 	fResult.ElecThr = fElecThr;
 	fResult.ElecThrReachedTime = iElecThrReachedTime;
 	fResult.ElecMax = fElecMax;
@@ -803,12 +804,10 @@ bool TAvalanche1D::avalanche() {
 		/* First we compute the space charge electric field and update parameters */
 		if ( bComputeSpaceChargeEffet and !bOnlyMultiplicationAvalanche ) {
 			computeSCEffect();
-			computeLongitudinalSCEffect(); // moved this before propagate
 		}
-			
+		
 		if ( !propagate() )
 			return false;
-		
 		
 		/* Empty the first bin after the first multplication procedure to avoid infinite elec creation */
 		if (iTimeStep == 1)
@@ -822,46 +821,53 @@ bool TAvalanche1D::avalanche() {
 			}
 		}*/
 		
-		// check if number of electrons exeeds set threshold
-		if (!bElecThrReached and fNElectrons[iTimeStep] >= fElecThr) {
-			iElecThrReachedTime = iTimeStep;
-			bElecThrReached = true;
-		//	cout << "electron threshold reached at time step: " << iTimeStep << endl;
-		//	cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
-		//	cout << "iTimeStep = " << iTimeStep << endl;		
-		}
+		computeInducedSignal2();
 
-		// save the number of electrons if it is the peak
-		if (fNElectrons[iTimeStep] > fElecMax) {
-			fElecMax = fNElectrons[iTimeStep];
+		if (bThrCrossTime and bSimUntilThr) {
+			break;
 		}
 		
-		// check if the number of electrons exceeds the amount needed for a streamer
-		// has been replaced by the Meek criterion see [Stocco 2025], condition implemented in computeSCEffect()
-		if (!bClassicStreamer and fNElectrons[iTimeStep] >= fClassicStreamerThr)
-			bClassicStreamer = true;
+		if (bStreamer and bSimUntilStreamer) {
+			break;
+		}
+		
+		// save the number of electrons if it is the max
+		if (fNElectrons[iTimeStep] > fElecMax) {
+			fElecMax = fNElectrons[iTimeStep];
+			// check if number of electrons exeeds set threshold
+			if (!bElecThrReached and fElecMax >= fElecThr) {
+				iElecThrReachedTime = iTimeStep;
+				bElecThrReached = true;
+				//	cout << "electron threshold reached at time step: " << iTimeStep << endl;
+				//	cout << "fNElectrons[iTimeStep] = " << fNElectrons[iTimeStep] << endl;
+				//	cout << "iTimeStep = " << iTimeStep << endl;
+				if (bSimUntilElecThr){
+					break;
+				}
+			}
+			
+			// check if the number of electrons exceeds the amount needed for a streamer
+			// also have the Meek criterion see [Stocco 2025], condition implemented in computeSCEffect()
+			if (!bClassicStreamer and fElecMax >= fClassicStreamerThr) {
+				bClassicStreamer = true;
+			}
 
-		if (!bElecLimit and fNElectrons[iTimeStep] >= fElecLimit) {
-			bElecLimit = true;
-			if (bElecLimit and bSimUntilElecLimit) {
-				computeInducedSignal2();
-				break;
+			if (!bElecLimit and fElecMax >= fElecLimit) {
+				bElecLimit = true;
+				if (bSimUntilElecLimit) {
+					break;
+				}
 			}
 		}
 		
-		// stop simulation if we get a streamer as the number of electrons now grows rapidly, slowing the simulation to a halt
-		if (bStreamer and bSimUntilStreamer) {
-			computeInducedSignal2();
-			break;
-		}
-
-		if ( !bOnlyMultiplicationAvalanche )
+		// both moved after propagate
+		if ( !bOnlyMultiplicationAvalanche ) {
+			computeLongitudinalSCEffect(); 
 			computeLongitudinalDiffusion();
+		}
 		
 		if (eAvalStatus != AVAL_NO_ERROR)
 			return false;
-		
-		computeInducedSignal2();
 		
 		if ( iTimeStep > iNElectronsSize ) {
 			eAvalStatus = AVAL_ERROR_TIMESTEP_EXCEEDING_LIMIT;
@@ -888,13 +894,6 @@ bool TAvalanche1D::avalanche() {
 			
 		//if (!bComputeSpaceChargeEffet and !bHasReachSpaceChargeLimit and fNElectrons[iTimeStep]>fSpaceChargeLimit)
 		//	bHasReachSpaceChargeLimit = true;
-		
-		// stop simulation if we want when these thresholds are reached
-		if (bElecThrReached and bSimUntilElecThr)
-			break;
-		
-		if (bThrCrossTime and bSimUntilThr)
-			break;
 		
 		iTimeStep++;
 	}

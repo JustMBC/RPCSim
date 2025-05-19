@@ -2,11 +2,11 @@
     <GapWidth>0.1</GapWidth>
     <Steps>500</Steps>
     <Anode>
-			<width>0.12</width>
+			<width>0.14</width>
 			<permittivity>5</permittivity>
     </Anode>
     <Cathode>
-			<width>0.12</width>
+			<width>0.14</width>
 			<permittivity>5</permittivity>
     </Cathode>
     <ElectricField>42000</ElectricField>
@@ -47,7 +47,7 @@
 	</Particle>
 	
 	<Events>100</Events>
-	<Threads>12</Threads>
+	<Threads>100</Threads>
 	
 	<OutFile>ATLAS_2024_42kV.dat</OutFile>
 	

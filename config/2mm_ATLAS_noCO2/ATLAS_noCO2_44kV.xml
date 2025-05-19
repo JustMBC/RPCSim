@@ -45,7 +45,7 @@
 	<Events>100</Events>
 	<Threads>12</Threads>
 	
-	<OutFile>2mm_ATLAS_noCO2_44kV_final.dat</OutFile>
+	<OutFile>2mm_ATLAS_noCO2_44kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
