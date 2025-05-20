@@ -10,7 +10,7 @@
 			<permittivity>7</permittivity>
     </Cathode>
     <ElectricField>51000</ElectricField>
-    <Threshold>0.1</Threshold>
+    <Threshold>0.63</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 

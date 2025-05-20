@@ -10,7 +10,7 @@
 			<permittivity>5</permittivity>
     </Cathode>
     <ElectricField>51000</ElectricField>
-    <Threshold>0.1</Threshold>
+    <Threshold>0.63</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -42,10 +42,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>50</Events>
-	<Threads>24</Threads>
+	<Events>100</Events>
+	<Threads>100</Threads>
 	
-	<OutFile>2_newChargeAndElectrodeThickness_ATLAS_noCO2_51kV.dat</OutFile>
+	<OutFile>_ATLAS_noCO2_51kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

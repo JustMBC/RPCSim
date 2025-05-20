@@ -8,9 +8,9 @@ request_cpus = 24
 request_memory = 6G
 request_disk = 6G
 
-output = out/2_newChargeAndElectrodeThickness_ATLAS_noCO2_51kV.out
-error = out/2_newChargeAndElectrodeThickness_ATLAS_noCO2_51kV.error
-log = out/2_newChargeAndElectrodeThickness_ATLAS_noCO2_51kV.log
+output = out/newElectrodeThicknessAndIndCharge_ATLAS_noCO2_51kV.out
+error = out/newElectrodeThicknessAndIndCharge_ATLAS_noCO2_51kV.error
+log = out/newElectrodeThicknessAndIndCharge_ATLAS_noCO2_51kV.log
 
 getenv = true
 initialdir = /usera/mlc95/RPCSim/

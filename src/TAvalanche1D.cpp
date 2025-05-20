@@ -327,8 +327,8 @@ void TAvalanche1D::makeResultFile() {
 	fResult.chargesTot_size = fTotalCharges.size();
 	fResult.signal_size = fSignal.size();*/
 	fResult.size = fCharges.size();
-	fResult.finalChargesTot = fTotalCharges[fTotalCharges.size() - 1];
-	fResult.totalInducedCharge = fSignal[fSignal.size() - 1] * fDt;
+	fResult.finalChargesTot = fTotalCharges.back();
+	fResult.totalInducedCharge = (fTotalSignal.back() * fDt * 1e-9);
 	fResult.ElecThr = fElecThr;
 	fResult.ElecThrReachedTime = iElecThrReachedTime;
 	fResult.ElecMax = fElecMax;
@@ -441,6 +441,8 @@ void TAvalanche1D::computeInducedSignal2(){
 	double sig = 0;
 	double charges = 0;
 
+	double InducedCharge = 0;
+
 	for(int z=0; z < iNstep; z++){
 		sig += weightingField * fVx.at(z) * 1e9 * e0 * fElecDetectorGrid[z]; //convert Vx from cm/ns to cm/s
 		charges += weightingField * e0 * fElecDetectorGrid[z] * fDx;
@@ -466,11 +468,19 @@ void TAvalanche1D::computeInducedSignal2(){
 		fTotalCharges.push_back(fTotalCharges.back() + charges);
 		fTotalSignal.push_back(fTotalSignal.back() + sig);
 	}
-	
+
+	// now the induced charge accounts for the variation in drift velocity
+	InducedCharge = fTotalSignal.back() * fDt * 1e-9;
+	if ((InducedCharge >= fChargeThres) and !bThrCrossTime ){
+		iThrCrossTimeStep = iTimeStep;
+		bThrCrossTime = true;
+	}
+	/*
 	if (fTotalCharges.back() >= fChargeThres and !bThrCrossTime ){
 		iThrCrossTimeStep = iTimeStep;
 		bThrCrossTime = true;
 	}
+	*/
 }
 
 void TAvalanche1D::computeInducedCharges(){
