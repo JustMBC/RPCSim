@@ -42,10 +42,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>100</Events>
+	<Events>400</Events>
 	<Threads>24</Threads>
 	
-	<OutFile>1_ATLAS_noCO2_47kV.dat</OutFile>
+	<OutFile>2_ATLAS_noCO2_47kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

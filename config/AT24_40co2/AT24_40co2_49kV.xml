@@ -2,15 +2,15 @@
     <GapWidth>0.1</GapWidth>
     <Steps>500</Steps>
     <Anode>
-			<width>0.12</width>
+			<width>0.14</width>
 			<permittivity>5</permittivity>
     </Anode>
     <Cathode>
-			<width>0.12</width>
+			<width>0.14</width>
 			<permittivity>5</permittivity>
     </Cathode>
     <ElectricField>49000</ElectricField>
-    <Threshold>3</Threshold>
+    <Threshold>0.63</Threshold>
     <EbarTableCalculationSteps>140</EbarTableCalculationSteps>
 </Detector>
 
@@ -46,10 +46,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>72</Events>
-	<Threads>4</Threads>
+	<Events>100</Events>
+	<Threads>24</Threads>
 	
-	<OutFile>AT24_40co2_49kV.dat</OutFile>
+	<OutFile>5_AT24_40co2_49kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

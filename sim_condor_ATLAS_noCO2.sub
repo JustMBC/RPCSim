@@ -4,13 +4,13 @@ arguments = "--config ./config/ATLAS_noCO2/$(CONFIG_FILE)"
 Requirements = (OpSysAndVer == "AlmaLinux9")
 
 Rank = kflops
-request_cpus = 12
-request_memory = 6G
+request_cpus = 8
+request_memory = 4G
 request_disk = 6G
 
-output = out/1_$(CONFIG_FILE).out
-error = out/1_$(CONFIG_FILE).error
-log = out/1_$(CONFIG_FILE).log
+output = out/2_$(CONFIG_FILE).out
+error = out/2_$(CONFIG_FILE).error
+log = out/2_$(CONFIG_FILE).log
 
 getenv = true
 initialdir = /usera/mlc95/RPCSim/

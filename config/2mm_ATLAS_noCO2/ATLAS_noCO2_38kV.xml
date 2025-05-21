@@ -1,6 +1,6 @@
 <Detector>
     <GapWidth>0.2</GapWidth>
-    <Steps>1000</Steps>
+    <Steps>500</Steps>
     <Anode>
 			<width>0.2</width>
 			<permittivity>5</permittivity>
@@ -43,9 +43,9 @@
 	</Particle>
 	
 	<Events>100</Events>
-	<Threads>12</Threads>
+	<Threads>24</Threads>
 	
-	<OutFile>2mm_ATLAS_noCO2_38kV.dat</OutFile>
+	<OutFile>7_2mm_ATLAS_noCO2_38kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>

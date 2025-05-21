@@ -47,9 +47,9 @@
 	</Particle>
 	
 	<Events>100</Events>
-	<Threads>100</Threads>
+	<Threads>24</Threads>
 	
-	<OutFile>ATLAS_2024_42kV.dat</OutFile>
+	<OutFile>3_ATLAS_2024_42kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
