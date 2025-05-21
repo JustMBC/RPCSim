@@ -8,9 +8,9 @@ request_cpus = 8
 request_memory = 4G
 request_disk = 6G
 
-output = out/3_$(CONFIG_FILE).out
-error = out/3_$(CONFIG_FILE).error
-log = out/3_$(CONFIG_FILE).log
+output = out/4_$(CONFIG_FILE).out
+error = out/4_$(CONFIG_FILE).error
+log = out/4_$(CONFIG_FILE).log
 
 getenv = true
 initialdir = /usera/mlc95/RPCSim/

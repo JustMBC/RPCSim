@@ -929,9 +929,9 @@ void TAvalanche1D::computeSCEffect() {
 			
 		SCEField[z] = tmp;
 		// streamer condidition based on Meek criterion
-		// if (tmp >= fStreamerFieldThr*fEini) {
 		// using abs(tmp+fEini) allows it to also check for large negative fields
-		if (abs(tmp+fEini) >= ((1+fStreamerFieldThr)*fEini)) {
+		//if (abs(tmp+fEini) >= ((1+fStreamerFieldThr)*fEini)) {
+		if (tmp >= (fStreamerFieldThr*fEini)) {
 			bStreamer = true;
 		}
 	}

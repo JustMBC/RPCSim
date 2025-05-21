@@ -46,10 +46,10 @@
 		<theta>0</theta>
 	</Particle>
 	
-	<Events>100</Events>
+	<Events>400</Events>
 	<Threads>24</Threads>
 	
-	<OutFile>3_ATLAS_2024_53kV.dat</OutFile>
+	<OutFile>4_ATLAS_2024_53kV.dat</OutFile>
 	
 	<Generator>SFMT</Generator>
 	<GlobalSeed>-1</GlobalSeed>
