@@ -4,13 +4,13 @@ arguments = "--config ./config/ATLAS_noCO2.xml"
 Requirements = (OpSysAndVer == "AlmaLinux9")
 
 Rank = kflops
-request_cpus = 24
+request_cpus = 8
 request_memory = 6G
 request_disk = 6G
 
-output = out/newElectrodeThicknessAndIndCharge_ATLAS_noCO2_51kV.out
-error = out/newElectrodeThicknessAndIndCharge_ATLAS_noCO2_51kV.error
-log = out/newElectrodeThicknessAndIndCharge_ATLAS_noCO2_51kV.log
+output = out/500events_4_ATLAS_noCO2_58kV.out
+error = out/500events_4_ATLAS_noCO2_58kV.error
+log = out/500events_4_ATLAS_noCO2_58kV.log
 
 getenv = true
 initialdir = /usera/mlc95/RPCSim/

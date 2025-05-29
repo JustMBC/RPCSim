@@ -111,7 +111,8 @@ void TAvalanche1D::init() {
 	fElecLimit = 1.e9; //limit at which the simulation terminates
 	
 	bElecThrReached = false;	// alternative threshold set by number of electrons
-	fElecThr = 18724528; // number of electrons corresponding to a charge of 3pC (or can use [Camarri 2025] 1-2fC, 6241-12483 electrons?)
+	fElecThr = 31207545.5; // corresponding to 5 pC
+	// 18724528;  number of electrons corresponding to a charge of 3pC
 	iElecThrReachedTime = -1;
 	
 	bInducedChargeThrReached = false;
