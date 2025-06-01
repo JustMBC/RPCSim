@@ -8,9 +8,9 @@ request_cpus = 8
 request_memory = 6G
 request_disk = 6G
 
-output = out/500events_4_ATLAS_noCO2_58kV.out
-error = out/500events_4_ATLAS_noCO2_58kV.error
-log = out/500events_4_ATLAS_noCO2_58kV.log
+output = out/ATLAS_noCO2_58kV.out
+error = out/ATLAS_noCO2_58kV.error
+log = out/ATLAS_noCO2_58kV.log
 
 getenv = true
 initialdir = /usera/mlc95/RPCSim/
