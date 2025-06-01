@@ -8,12 +8,12 @@ Also Makefile is not _bullet-proof_ and has to be edited depending on your distr
 
 =======================================
 
-I have made changes which are documented in this GitHub Repository
+I have made changes which are documented in this GitHub Repository. - Matthew
 
 after compiling, run by bashing:
 ./sim --config ./config/CONFIG_FILE.xml
 
 The output file is a binary file with its name set in the config.xml file.
 
-It is read by using readResultNewest.py. Bash:
+It can be read by using readResultNewest.py. Bash:
 python readResultNewest.py binaryFileName.bin csvFileName.csv
